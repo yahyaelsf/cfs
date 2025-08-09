@@ -1,0 +1,72 @@
+/* :root {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+} */
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide {
+    width: 100% !important;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.site-container {
+    max-width: 100%;
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+.Partners_all_card {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 200.8px !important;
+    height: 150px !important;
+    border: 1px solid #E8E8E8;
+    border-radius: 24px;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.swiper-pagination33 {
+    transform: translateY(50px) !important;
+}
