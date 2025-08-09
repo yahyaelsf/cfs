@@ -15,90 +15,88 @@
 
 
         <!-- Navbar -->
-        <nav id="navbar"
-            class="bg-white shadow-md sticky top-0 z-50 h-16 flex items-center transition-shadow duration-300">
-            <div class="max-w-screen-xl mx-auto px-4 flex items-center justify-between w-full">
+        <nav id="navbar" class="bg-white shadow-md sticky top-0 z-50 transition-shadow duration-300">
+            <div class="max-w-screen-xl mx-auto px-4 flex items-center justify-between h-16 md:h-22 w-full">
                 <div class="flex items-center gap-3">
                     <img id="logo" src="images/logo1.jpeg" alt="Logo"
-                        class="w-28 h-28 rounded-full transition-all duration-300 object-cover mt-12">
+                        class="w-14 h-14 md:w-28 md:h-28 rounded-full transition-all duration-300 object-cover md:mt-14" />
                 </div>
-
+        
                 <!-- Desktop Menu -->
-                <ul class="hidden md:flex gap-6 text-lg justify-center flex-1 mr-12">
+                <ul class="hidden md:flex gap-6 text-lg justify-center flex-1 mr-12 select-none"
+                    onmouseenter="closeAllDropdowns()">
                     <li><a href="#home" class="hover:text-yellow-500 transition">الرئيسية</a></li>
-                    <li class="relative dropdown">
-                        <button class="dropdown-btn flex items-center gap-1 hover:text-yellow-500">
+        
+                    <li class="relative group dropdown">
+                        <button class="dropdown-btn flex items-center gap-1 hover:text-yellow-500 focus:outline-none"
+                            aria-haspopup="true" aria-expanded="false">
                             البرامج
                             <svg class="w-4 h-4 rtl:ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
-                        <ul
-                            class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white border rounded shadow-md text-base">
+                        <ul class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white border rounded shadow-md text-base group-hover:block"
+                            role="menu">
                             <li><a href="#education" class="block px-4 py-2 hover:bg-gray-100">التعليم</a></li>
                             <li><a href="#psychology" class="block px-4 py-2 hover:bg-gray-100">الدعم النفسي</a></li>
                             <li><a href="#relief" class="block px-4 py-2 hover:bg-gray-100">الدعم الإغاثي</a></li>
                             <li><a href="#economic" class="block px-4 py-2 hover:bg-gray-100">التمكين الاقتصادي</a></li>
-                            <li><a href="#agriculture" class="block px-4 py-2 hover:bg-gray-100">التمكين الزراعي</a>
-                            </li>
+                            <li><a href="#agriculture" class="block px-4 py-2 hover:bg-gray-100">التمكين الزراعي</a></li>
                             <li><a href="#water" class="block px-4 py-2 hover:bg-gray-100">المياه والصرف الصحي</a></li>
                             <li><a href="#shelter" class="block px-4 py-2 hover:bg-gray-100">المأوى</a></li>
                         </ul>
                     </li>
-                    <!-- Reports dropdown -->
-                    <li class="relative dropdown">
-                        <button class="dropdown-btn flex items-center gap-1 hover:text-yellow-500">
+        
+                    <li class="relative group dropdown">
+                        <button class="dropdown-btn flex items-center gap-1 hover:text-yellow-500 focus:outline-none"
+                            aria-haspopup="true" aria-expanded="false">
                             التقارير
                             <svg class="w-4 h-4 rtl:ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
-                        <ul
-                            class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white border rounded shadow-md text-base">
-                            <li><a href="#admin-reports" class="block px-4 py-2 hover:bg-gray-100">تقارير إدارية</a>
-                            </li>
+                        <ul class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white border rounded shadow-md text-base group-hover:block"
+                            role="menu">
+                            <li><a href="#admin-reports" class="block px-4 py-2 hover:bg-gray-100">تقارير إدارية</a></li>
                             <li><a href="#policies" class="block px-4 py-2 hover:bg-gray-100">الأدلة والسياسات</a></li>
                         </ul>
                     </li>
-                    <!-- Media dropdown -->
-                    <li class="relative dropdown">
-                        <button class="dropdown-btn flex items-center gap-1 hover:text-yellow-500">
+        
+                    <li class="relative group dropdown">
+                        <button class="dropdown-btn flex items-center gap-1 hover:text-yellow-500 focus:outline-none"
+                            aria-haspopup="true" aria-expanded="false">
                             المركز الإعلامي
                             <svg class="w-4 h-4 rtl:ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
-                        <ul
-                            class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white border rounded shadow-md text-base">
+                        <ul class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white border rounded shadow-md text-base group-hover:block"
+                            role="menu">
                             <li><a href="#news" class="block px-4 py-2 hover:bg-gray-100">الأخبار</a></li>
                             <li><a href="#stories" class="block px-4 py-2 hover:bg-gray-100">قصص من الميدان</a></li>
-                            <li><a href="#gallery" class="block px-4 py-2 hover:bg-gray-100">معرض الصور والفيديو</a>
-                            </li>
+                            <li><a href="#gallery" class="block px-4 py-2 hover:bg-gray-100">معرض الصور والفيديو</a></li>
                         </ul>
                     </li>
-                    <!-- Advertisements dropdown -->
-                    <li class="relative dropdown">
-                        <button class="dropdown-btn flex items-center gap-1 hover:text-yellow-500">
+        
+                    <li class="relative group dropdown">
+                        <button class="dropdown-btn flex items-center gap-1 hover:text-yellow-500 focus:outline-none"
+                            aria-haspopup="true" aria-expanded="false">
                             إعلانات
                             <svg class="w-4 h-4 rtl:ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
-                        <ul
-                            class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white border rounded shadow-md text-base">
+                        <ul class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white border rounded shadow-md text-base group-hover:block"
+                            role="menu">
                             <li><a href="#tenders" class="block px-4 py-2 hover:bg-gray-100">إعلان عطاء</a></li>
                             <li><a href="#jobs" class="block px-4 py-2 hover:bg-gray-100">إعلان توظيف</a></li>
                             <li><a href="#volunteer" class="block px-4 py-2 hover:bg-gray-100">إعلان تطوع</a></li>
                         </ul>
                     </li>
+        
                     <li><a href="#contact" class="hover:text-yellow-500 transition"> الأنشطة</a></li>
-
                 </ul>
-
+        
                 <div class="hidden md:flex items-center gap-2">
                     <button class="px-4 py-1.5 rounded-full text-sm bg-gray-100 hover:bg-gray-200 transition">🌐
                         English</button>
@@ -106,28 +104,29 @@
                         class="px-4 py-1.5 bg-red-500 text-white rounded-full hover:bg-red-600 transition font-semibold">تواصل
                         معنا</a>
                 </div>
-
+        
                 <!-- Mobile toggle button -->
-                <button id="mobileToggle" class="md:hidden p-2 bg-gray-100 rounded">
+                <button id="mobileToggle"
+                    class="md:hidden p-2 bg-gray-100 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                    aria-label="Toggle mobile menu" aria-expanded="false">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                 </button>
             </div>
-
+        
             <!-- Mobile Menu -->
             <div id="mobileMenu" class="hidden bg-white md:hidden px-4 pb-4">
-                <ul class="space-y-2">
+                <ul class="space-y-2 select-none">
                     <li><a href="#home" class="block py-2">الرئيسية</a></li>
-
+        
                     <!-- Mobile Programs -->
                     <li>
-                        <button class="mobile-dropdown-btn flex justify-between w-full py-2">
+                        <button class="mobile-dropdown-btn flex justify-between w-full py-2 focus:outline-none"
+                            aria-haspopup="true" aria-expanded="false">
                             البرامج
                             <svg class="w-5 h-5 rtl:ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
                         <ul class="mobile-dropdown-menu hidden pl-4 space-y-1">
@@ -140,14 +139,14 @@
                             <li><a href="#shelter" class="block py-1">المأوى</a></li>
                         </ul>
                     </li>
-
-                    <!-- Similarly Reports -->
+        
+                    <!-- Mobile Reports -->
                     <li>
-                        <button class="mobile-dropdown-btn flex justify-between w-full py-2">
+                        <button class="mobile-dropdown-btn flex justify-between w-full py-2 focus:outline-none"
+                            aria-haspopup="true" aria-expanded="false">
                             التقارير
                             <svg class="w-5 h-5 rtl:ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
                         <ul class="mobile-dropdown-menu hidden pl-4 space-y-1">
@@ -155,13 +154,14 @@
                             <li><a href="#policies" class="block py-1">الأدلة والسياسات</a></li>
                         </ul>
                     </li>
-                    <!-- Media -->
+        
+                    <!-- Mobile Media -->
                     <li>
-                        <button class="mobile-dropdown-btn flex justify-between w-full py-2">
+                        <button class="mobile-dropdown-btn flex justify-between w-full py-2 focus:outline-none"
+                            aria-haspopup="true" aria-expanded="false">
                             المركز الإعلامي
                             <svg class="w-5 h-5 rtl:ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
                         <ul class="mobile-dropdown-menu hidden pl-4 space-y-1">
@@ -170,13 +170,14 @@
                             <li><a href="#gallery" class="block py-1">معرض الصور والفيديو</a></li>
                         </ul>
                     </li>
-                    <!-- Advertisements -->
+        
+                    <!-- Mobile Advertisements -->
                     <li>
-                        <button class="mobile-dropdown-btn flex justify-between w-full py-2">
+                        <button class="mobile-dropdown-btn flex justify-between w-full py-2 focus:outline-none"
+                            aria-haspopup="true" aria-expanded="false">
                             إعلانات
                             <svg class="w-5 h-5 rtl:ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
                         <ul class="mobile-dropdown-menu hidden pl-4 space-y-1">
@@ -185,15 +186,16 @@
                             <li><a href="#volunteer" class="block py-1">إعلان تطوع</a></li>
                         </ul>
                     </li>
-
+        
                     <li><a href="#contact" class="block py-2"> الأنشطة</a></li>
+        
                     <li>
                         <button id="langToggleMobile"
                             class="w-full flex items-center justify-center gap-1 px-4 py-2 rounded bg-gray-100 hover:bg-gray-200 transition">
                             🌐 English
                         </button>
                     </li>
-
+        
                     <li>
                         <a href="#complaint"
                             class="w-full flex items-center justify-center gap-1 px-4 py-2 rounded bg-red-500 text-white hover:bg-red-600 transition">
@@ -203,6 +205,7 @@
                 </ul>
             </div>
         </nav>
+
 
         <!-- Swiper Slider: set height with responsive units, avoid overflow -->
         <section class="relative" style="height: clamp(280px, 50vh, 600px); overflow:hidden;">

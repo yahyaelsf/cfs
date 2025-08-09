@@ -39,7 +39,7 @@ img {
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .desktop-menu {
         display: none;
     }
@@ -91,7 +91,7 @@ img {
             height: 40px;
         }
     .message svg {
-    width: 35px; 
+    width: 40px; 
     
 }
 }
