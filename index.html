@@ -11,275 +11,364 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- Put this inside your <head> -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body class="font-sans text-gray-800">
+    <!-- soial media -->
+    <!-- Fixed Social Media Sidebar -->
+    <a href="your-link-here" target="_blank" class="fixed bottom-4 right-4 z-50" data-aos="fade-left" data-aos-delay="100">
+      <img src="images/question1.jfif" alt="Question" class="w-16 h-16 shadow-lg shadow-red-500 rounded-full 
+                        animate-bounce transition-transform duration-300 hover:scale-110">
+    </a>
+
+    <div class="fixed left-4 top-1/3 z-50 flex flex-col space-y-3" data-aos="fade-right" data-aos-delay="100">
+      <a href="https://facebook.com" target="_blank"
+        class="bg-blue-600 hover:bg-blue-700 text-white p-1 rounded-full shadow-lg transition transform hover:scale-110">
+        <i class="fab fa-facebook-f p-2 rounded-full" style="transform: translateX(-2px);"></i>
+      </a>
+
+      <a href="https://twitter.com" target="_blank"
+        class="bg-sky-500 hover:bg-sky-600 text-white p-1 rounded-full shadow-lg transition transform hover:scale-110">
+        <i class="fab fa-twitter  p-2 rounded-full "></i>
+      </a>
+
+      <a href="https://instagram.com" target="_blank"
+        class="bg-pink-500 hover:bg-pink-600 text-white p-1 rounded-full shadow-lg transition transform hover:scale-110">
+        <i class="fab fa-instagram  p-2 rounded-full " style="transform: translateX(-1px);"></i>
+      </a>
+      <a href="https://instagram.com" target="_blank"
+        class="text-white p-1 rounded-full shadow-lg transition transform hover:scale-110"
+        style="background-color: #25D366;">
+        <i class="fa-brands fa-whatsapp p-2 rounded-full"></i>
+      </a>
+    </div>
 
     <!-- Navbar -->
-  <nav id="navbar" class="bg-white shadow-md sticky top-0 z-50 transition-shadow duration-300">
-    <div class="max-w-screen-xl mx-auto px-4 flex items-center justify-between h-16 md:h-22 w-full">
-      <div class="flex items-center gap-3">
-        <img id="logo" src="images/logo1.jpeg" alt="Logo"
-          class="w-14 h-14 md:w-28 md:h-28 rounded-full transition-all duration-300 object-cover md:mt-14" />
-      </div>
-  
-      <!-- Desktop Menu -->
-      <ul class="hidden lg:flex gap-6 text-lg justify-center flex-1 mr-12 select-none desktop-menu" onmouseenter="closeAllDropdowns()">
-        <li><a href="#home" class="hover:text-yellow-500 transition">الرئيسية</a></li>
-  
-        <li class="relative group dropdown">
-          <button class="dropdown-btn flex items-center gap-1 hover:text-yellow-500 focus:outline-none"
-            aria-haspopup="true" aria-expanded="false">
-            البرامج
-            <svg class="w-4 h-4 rtl:ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <ul
-            class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white border rounded shadow-md text-base group-hover:block"
-            role="menu">
-            <li><a href="#education" class="block px-4 py-2 hover:bg-gray-100">التعليم</a></li>
-            <li><a href="#psychology" class="block px-4 py-2 hover:bg-gray-100">الدعم النفسي</a></li>
-            <li><a href="#relief" class="block px-4 py-2 hover:bg-gray-100">الدعم الإغاثي</a></li>
-            <li><a href="#economic" class="block px-4 py-2 hover:bg-gray-100">التمكين الاقتصادي</a></li>
-            <li><a href="#agriculture" class="block px-4 py-2 hover:bg-gray-100">التمكين الزراعي</a></li>
-            <li><a href="#water" class="block px-4 py-2 hover:bg-gray-100">المياه والصرف الصحي</a></li>
-            <li><a href="#shelter" class="block px-4 py-2 hover:bg-gray-100">المأوى</a></li>
-          </ul>
-        </li>
-  
-        <li class="relative group dropdown">
-          <button class="dropdown-btn flex items-center gap-1 hover:text-yellow-500 focus:outline-none"
-            aria-haspopup="true" aria-expanded="false">
-            التقارير
-            <svg class="w-4 h-4 rtl:ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <ul
-            class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white border rounded shadow-md text-base group-hover:block"
-            role="menu">
-            <li><a href="#admin-reports" class="block px-4 py-2 hover:bg-gray-100">تقارير إدارية</a></li>
-            <li><a href="#policies" class="block px-4 py-2 hover:bg-gray-100">الأدلة والسياسات</a></li>
-          </ul>
-        </li>
-  
-        <li class="relative group dropdown">
-          <button class="dropdown-btn flex items-center gap-1 hover:text-yellow-500 focus:outline-none"
-            aria-haspopup="true" aria-expanded="false">
-            المركز الإعلامي
-            <svg class="w-4 h-4 rtl:ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <ul
-            class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white border rounded shadow-md text-base group-hover:block"
-            role="menu">
-            <li><a href="#news" class="block px-4 py-2 hover:bg-gray-100">الأخبار</a></li>
-            <li><a href="#stories" class="block px-4 py-2 hover:bg-gray-100">قصص من الميدان</a></li>
-            <li><a href="#gallery" class="block px-4 py-2 hover:bg-gray-100">معرض الصور والفيديو</a></li>
-          </ul>
-        </li>
-  
-        <li class="relative group dropdown">
-          <button class="dropdown-btn flex items-center gap-1 hover:text-yellow-500 focus:outline-none"
-            aria-haspopup="true" aria-expanded="false">
-            إعلانات
-            <svg class="w-4 h-4 rtl:ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <ul
-            class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white border rounded shadow-md text-base group-hover:block"
-            role="menu">
-            <li><a href="#tenders" class="block px-4 py-2 hover:bg-gray-100">إعلان عطاء</a></li>
-            <li><a href="#jobs" class="block px-4 py-2 hover:bg-gray-100">إعلان توظيف</a></li>
-            <li><a href="#volunteer" class="block px-4 py-2 hover:bg-gray-100">إعلان تطوع</a></li>
-          </ul>
-        </li>
-  
-        <li><a href="#contact" class="hover:text-yellow-500 transition"> الأنشطة</a></li>
-      </ul>
-  
-      <div class="hidden lg:flex items-center gap-2">
-        <button class="px-4 py-1.5 rounded-full text-sm bg-gray-100 hover:bg-gray-200 transition">🌐
-          English</button>
-        <a href="#complaint"
-          class="px-4 py-1.5 bg-red-500 text-white rounded-full hover:bg-red-600 transition font-semibold">تواصل
-          معنا</a>
-      </div>
-  
-      <!-- Mobile toggle button -->
-      <button id="mobileToggle"
-        class="lg:hidden p-2 bg-gray-100 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400"
-        aria-label="Toggle mobile menu" aria-expanded="false">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-    </div>
-  
-    <!-- Mobile Menu -->
-    <div id="mobileMenu" class="hidden bg-white lg:hidden px-4 pb-4 mobile-menu">
-      <ul class="space-y-2 select-none">
-        <li><a href="#home" class="block py-2">الرئيسية</a></li>
-  
-        <!-- Mobile Programs -->
-        <li>
-          <button class="mobile-dropdown-btn flex justify-between w-full py-2 focus:outline-none" aria-haspopup="true"
-            aria-expanded="false">
-            البرامج
-            <svg class="w-5 h-5 rtl:ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <ul class="mobile-dropdown-menu hidden pl-4 space-y-1">
-            <li><a href="#education" class="block py-1">التعليم</a></li>
-            <li><a href="#psychology" class="block py-1">الدعم النفسي</a></li>
-            <li><a href="#relief" class="block py-1">الدعم الإغاثي</a></li>
-            <li><a href="#economic" class="block py-1">التمكين الاقتصادي</a></li>
-            <li><a href="#agriculture" class="block py-1">التمكين الزراعي</a></li>
-            <li><a href="#water" class="block py-1">المياه والصرف الصحي</a></li>
-            <li><a href="#shelter" class="block py-1">المأوى</a></li>
-          </ul>
-        </li>
-  
-        <!-- Mobile Reports -->
-        <li>
-          <button class="mobile-dropdown-btn flex justify-between w-full py-2 focus:outline-none" aria-haspopup="true"
-            aria-expanded="false">
-            التقارير
-            <svg class="w-5 h-5 rtl:ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <ul class="mobile-dropdown-menu hidden pl-4 space-y-1">
-            <li><a href="#admin-reports" class="block py-1">تقارير إدارية</a></li>
-            <li><a href="#policies" class="block py-1">الأدلة والسياسات</a></li>
-          </ul>
-        </li>
-  
-        <!-- Mobile Media -->
-        <li>
-          <button class="mobile-dropdown-btn flex justify-between w-full py-2 focus:outline-none" aria-haspopup="true"
-            aria-expanded="false">
-            المركز الإعلامي
-            <svg class="w-5 h-5 rtl:ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <ul class="mobile-dropdown-menu hidden pl-4 space-y-1">
-            <li><a href="#news" class="block py-1">الأخبار</a></li>
-            <li><a href="#stories" class="block py-1">قصص من الميدان</a></li>
-            <li><a href="#gallery" class="block py-1">معرض الصور والفيديو</a></li>
-          </ul>
-        </li>
-  
-        <!-- Mobile Advertisements -->
-        <li>
-          <button class="mobile-dropdown-btn flex justify-between w-full py-2 focus:outline-none" aria-haspopup="true"
-            aria-expanded="false">
-            إعلانات
-            <svg class="w-5 h-5 rtl:ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <ul class="mobile-dropdown-menu hidden pl-4 space-y-1">
-            <li><a href="#tenders" class="block py-1">إعلان عطاء</a></li>
-            <li><a href="#jobs" class="block py-1">إعلان توظيف</a></li>
-            <li><a href="#volunteer" class="block py-1">إعلان تطوع</a></li>
-          </ul>
-        </li>
-  
-        <li><a href="#contact" class="block py-2"> الأنشطة</a></li>
-  
-        <li>
-          <button id="langToggleMobile"
-            class="w-full flex items-center justify-center gap-1 px-4 py-2 rounded bg-gray-100 hover:bg-gray-200 transition">
-            🌐 English
-          </button>
-        </li>
-  
-        <li>
+    <nav id="navbar" class="bg-white shadow-md sticky top-0 z-50 transition-shadow duration-300">
+      <div class="max-w-screen-xl mx-auto px-4 flex items-center justify-between h-16 md:h-22 w-full">
+        <div class="flex items-center gap-3">
+          <img id="logo" src="images/logo1.jpeg" alt="Logo"
+            class="w-20 h-20  mt-6 md:w-28 md:h-28 rounded-full transition-all duration-300 object-cover md:mt-14" />
+        </div>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden lg:flex gap-6 text-lg justify-center flex-1 mr-12 select-none desktop-menu">
+          <li><a href="#home" class="hover:text-yellow-500 transition">الرئيسية</a></li>
+
+          <!-- البرامج -->
+          <li class="relative dropdown">
+
+            <button class="flex items-center gap-1 hover:text-yellow-500 focus:outline-none">
+              من نحن
+              <svg class="w-4 h-4 rtl:ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <ul class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white border rounded shadow-md text-base"
+              role="menu">
+              <li><a href="#education" class="block px-4 py-2 hover:bg-gray-100">الرؤية والرسالة</a></li>
+              <li><a href="#psychology" class="block px-4 py-2 hover:bg-gray-100"> الأهداف
+                  الإستراتيجية</a></li>
+              <li><a href="#relief" class="block px-4 py-2 hover:bg-gray-100"> الخطة الإستراتيجية</a></li>
+            </ul>
+          </li>
+          <li class="relative dropdown">
+
+            <button class="flex items-center gap-1 hover:text-yellow-500 focus:outline-none">
+              البرامج
+              <svg class="w-4 h-4 rtl:ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <ul class="dropdown-menu hidden absolute left-0 mt-2 w-60 bg-white border rounded shadow-md text-base"
+              role="menu">
+              <li><a href="#education" class="block px-4 py-2 hover:bg-gray-100"> البرنامج التعليمي –
+                  التثقيفي </a></li>
+              <li><a href="#psychology" class="block px-4 py-2 hover:bg-gray-100"> البرنامج الإغاثي
+                  الاجتماعي والامن الغذائي وسبل العيش</a></li>
+              <li><a href="#relief" class="block px-4 py-2 hover:bg-gray-100"> برنامج الحماية والدعم
+                  النفسي</a></li>
+              <li><a href="#economic" class="block px-4 py-2 hover:bg-gray-100"> البرنامج البيئي -
+                  الزراعي</a></li>
+              <li><a href="#agriculture" class="block px-4 py-2 hover:bg-gray-100"> برنامج نوافذ
+                  مجتمعية</a></li>
+              <li><a href="#water" class="block px-4 py-2 hover:bg-gray-100"> برنامج التدريب والتشغيل
+                  وتنمية القدرات</a></li>
+              <li><a href="#shelter" class="block px-4 py-2 hover:bg-gray-100"> البرنامج الرياضي</a></li>
+            </ul>
+          </li>
+
+          <!-- التقارير -->
+          <li class="relative dropdown">
+            <button class="dropdown-toggle flex items-center gap-1 hover:text-yellow-500 focus:outline-none">
+              التقارير
+              <svg class="w-4 h-4 rtl:ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <ul class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white border rounded shadow-md text-base"
+              role="menu">
+              <li><a href="#admin-reports" class="block px-4 py-2 hover:bg-gray-100">تقارير إدارية</a>
+              </li>
+              <li><a href="#policies" class="block px-4 py-2 hover:bg-gray-100">الأدلة والسياسات</a></li>
+            </ul>
+          </li>
+
+          <!-- المركز الإعلامي -->
+          <li class="relative dropdown">
+            <button class="dropdown-toggle flex items-center gap-1 hover:text-yellow-500 focus:outline-none">
+              المركز الإعلامي
+              <svg class="w-4 h-4 rtl:ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <ul class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white border rounded shadow-md text-base"
+              role="menu">
+              <li><a href="#news" class="block px-4 py-2 hover:bg-gray-100">الأخبار</a></li>
+              <li><a href="#stories" class="block px-4 py-2 hover:bg-gray-100">قصص من الميدان</a></li>
+              <li><a href="#gallery" class="block px-4 py-2 hover:bg-gray-100">معرض الصور والفيديو</a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- إعلانات -->
+          <li class="relative dropdown">
+            <button class="dropdown-toggle flex items-center gap-1 hover:text-yellow-500 focus:outline-none">
+              إعلانات
+              <svg class="w-4 h-4 rtl:ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <ul class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white border rounded shadow-md text-base"
+              role="menu">
+              <li><a href="#tenders" class="block px-4 py-2 hover:bg-gray-100">إعلان عطاء</a></li>
+              <li><a href="#jobs" class="block px-4 py-2 hover:bg-gray-100">إعلان توظيف</a></li>
+              <li><a href="#volunteer" class="block px-4 py-2 hover:bg-gray-100">إعلان تطوع</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#contact" class="hover:text-yellow-500 transition">الأنشطة</a></li>
+        </ul>
+
+        <div class="hidden lg:flex items-center gap-2">
+          <button class="px-4 py-1.5 rounded-full text-sm bg-gray-100 hover:bg-gray-200 transition">🌐
+            English</button>
           <a href="#complaint"
-            class="w-full flex items-center justify-center gap-1 px-4 py-2 rounded bg-red-500 text-white hover:bg-red-600 transition">
-            تواصل معنا
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+            class="px-4 py-1.5 bg-red-500 text-white rounded-full hover:bg-red-600 transition font-semibold">تواصل
+            معنا</a>
+        </div>
+
+        <!-- Mobile toggle button -->
+        <button id="mobileToggle"
+          class="lg:hidden p-2 bg-gray-100 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          aria-label="Toggle mobile menu" aria-expanded="false">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="hidden bg-white lg:hidden px-4 pb-4 mobile-menu">
+        <ul class="space-y-2 select-none">
+          <li><a href="#home" class="block py-2">الرئيسية</a></li>
+
+          <!-- Mobile Programs -->
+          <li>
+            <button class="mobile-dropdown-btn flex justify-between w-full py-2 focus:outline-none" aria-haspopup="true"
+              aria-expanded="false">
+              من نحن
+              <svg class="w-5 h-5 rtl:ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <ul class="mobile-dropdown-menu hidden pl-4 space-y-1">
+              <li><a href="#education" class="block py-1 px-3">الرؤية والرسالة</a></li>
+              <li><a href="#psychology" class="block py-1 px-3"> الأهداف الاستراتيجية</a></li>
+              <li><a href="#relief" class="block py-1 px-3"> الخطة الإستراتيجية</a></li>
+
+            </ul>
+          </li>
+          <li>
+            <button class="mobile-dropdown-btn flex justify-between w-full py-2 focus:outline-none" aria-haspopup="true"
+              aria-expanded="false">
+              البرامج
+              <svg class="w-5 h-5 rtl:ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <ul class="mobile-dropdown-menu hidden pl-4 space-y-1">
+              <li><a href="#education" class="block py-1 px-3"> البرنامج التعليمي – التثقيفي </a></li>
+              <li><a href="#psychology" class="block py-1 px-3"> البرنامج الإغاثي الاجتماعي والامن الغذائي
+                  وسبل
+                  العيش</a></li>
+              <li><a href="#relief" class="block py-1 px-3"> برنامج الحماية والدعم النفسي</a></li>
+              <li><a href="#economic" class="block py-1 px-3"> البرنامج البيئي - الزراعي</a></li>
+              <li><a href="#agriculture" class="block py-1 px-3"> برنامج نوافذ مجتمعية</a></li>
+              <li><a href="#water" class="block py-1 px-3"> برنامج التدريب والتشغيل وتنمية القدرات</a>
+              </li>
+              <li><a href="#shelter" class="block py-1 px-3"> البرنامج الرياضي</a></li>
+            </ul>
+          </li>
+
+          <!-- Mobile Reports -->
+          <li>
+            <button class="mobile-dropdown-btn flex justify-between w-full py-2 focus:outline-none" aria-haspopup="true"
+              aria-expanded="false">
+              التقارير
+              <svg class="w-5 h-5 rtl:ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <ul class="mobile-dropdown-menu hidden pl-4 space-y-1">
+              <li><a href="#admin-reports" class="block py-1 px-3">تقارير إدارية</a></li>
+              <li><a href="#policies" class="block py-1 px-3">الأدلة والسياسات</a></li>
+            </ul>
+          </li>
+
+          <!-- Mobile Media -->
+          <li>
+            <button class="mobile-dropdown-btn flex justify-between w-full py-2 focus:outline-none" aria-haspopup="true"
+              aria-expanded="false">
+              المركز الإعلامي
+              <svg class="w-5 h-5 rtl:ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <ul class="mobile-dropdown-menu hidden pl-4 space-y-1">
+              <li><a href="#news" class="block py-1 px-3">الأخبار</a></li>
+              <li><a href="#stories" class="block py-1 px-3">قصص من الميدان</a></li>
+              <li><a href="#gallery" class="block py-1 px-3">معرض الصور والفيديو</a></li>
+            </ul>
+          </li>
+
+          <!-- Mobile Advertisements -->
+          <li>
+            <button class="mobile-dropdown-btn flex justify-between w-full py-2 focus:outline-none" aria-haspopup="true"
+              aria-expanded="false">
+              إعلانات
+              <svg class="w-5 h-5 rtl:ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <ul class="mobile-dropdown-menu hidden pl-4 space-y-1">
+              <li><a href="#tenders" class="block py-1 px-3"> إعلان عطاء </a></li>
+              <li><a href="#jobs" class="block py-1 px-3">إعلان توظيف</a></li>
+              <li><a href="#volunteer" class="block py-1 px-3">إعلان تطوع</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#contact" class="block py-2"> الأنشطة</a></li>
+
+          <li>
+            <button id="langToggleMobile"
+              class="w-full flex items-center justify-center gap-1 px-4 py-2 rounded bg-gray-100 hover:bg-gray-200 transition">
+              🌐 English
+            </button>
+          </li>
+
+          <li>
+            <a href="#complaint"
+              class="w-full flex items-center justify-center gap-1 px-4 py-2 rounded bg-red-500 text-white hover:bg-red-600 transition">
+              تواصل معنا
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
     <!-- Swiper Slider: set height with responsive units, avoid overflow -->
-    <section class="relative" style="height: clamp(300px, 80vh, 900px); overflow:hidden;">
+    <section class="relative" style="height: clamp(300px, 100vh, 900px); overflow:hidden;">
       <div class="swiper HeaderSwiper h-full">
         <div class="swiper-wrapper">
           <!-- Slide 1 -->
           <div class="swiper-slide relative">
             <img src="images/slide1.jpg" alt="Slide 1" class="w-full h-full object-cover">
-            <div
-              class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white text-center px-4">
-              <h1 class="text-2xl md:text-4xl font-bold drop-shadow-md">جمعية المستقبل الخيرية</h1>
-              <p class="text-sm md:text-lg mt-2 max-w-xl drop-shadow">نحن نعمل من أجل تطوير المجتمعات وتحقيق مستقبل أفضل
-                للجميع.</p>
+            <div class="absolute inset-0 bg-black/40 flex flex-col items-start justify-center text-white  px-12 pt-12 ">
+              <h1 class="text-2xl md:text-4xl font-bold drop-shadow-md pt-12">
+                جمعية المستقبل الخيرية
+              </h1>
+              <p class="text-sm md:text-lg mt-2 max-w-xl drop-shadow">
+                مؤسسة رائدة تنهض بالواقع الفلسطيني من أجل تحقيق الاستقرار والتنمية المجتمعية
+              </p>
               <button
-                class="px-6 py-2 mt-4 bg-red-600 text-white rounded-full hover:bg-red-700 transition font-semibold">إكتشف
-                أكثر</button>
+                class="px-6 py-2 mt-4 bg-red-600 text-white rounded-full hover:bg-red-700 transition font-semibold">
+                إكتشف أكثر
+              </button>
             </div>
           </div>
 
           <div class="swiper-slide relative">
             <img src="images/slide2.jpg" class="w-full h-full object-cover" alt="Slide 2">
-            <div
-              class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white text-center px-4">
-              <h1 class="text-2xl md:text-4xl font-bold drop-shadow-md">جمعية المستقبل الخيرية</h1>
-              <p class="text-sm md:text-lg mt-2 max-w-xl drop-shadow">نحن نعمل من أجل تطوير المجتمعات وتحقيق مستقبل أفضل
-                للجميع.</p>
+            <div class="absolute inset-0 bg-black/40 flex flex-col items-start justify-center text-white px-12 pt-12 ">
+              <h1 class="text-2xl md:text-4xl font-bold drop-shadow-md pt-12">
+                جمعية المستقبل الخيرية
+              </h1>
+              <p class="text-sm md:text-lg mt-2 max-w-xl drop-shadow">
+                جمعية المستقبل الخيرية أهلية تنموية ثقافية اجتماعية، تسعى لتمكين وتطوير المرأة والطفل
+                والشباب كي يلعبوا دورا رائدا في
+                بناء مجتمع مدني واع.
+              </p>
               <button
-                class="px-6 py-2 mt-4 bg-red-600 text-white rounded-full hover:bg-red-700 transition font-semibold">إكتشف
-                أكثر</button>
+                class="px-6 py-2 mt-4 bg-red-600 text-white rounded-full hover:bg-red-700 transition font-semibold">
+                إكتشف أكثر
+              </button>
             </div>
           </div>
           <div class="swiper-slide relative">
             <img src="images/slide3.jpg" class="w-full h-full object-cover" alt="Slide 3">
-            <div
-              class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white text-center px-4">
-              <h1 class="text-2xl md:text-4xl font-bold drop-shadow-md">جمعية المستقبل الخيرية</h1>
-              <p class="text-sm md:text-lg mt-2 max-w-xl drop-shadow">نحن نعمل من أجل تطوير المجتمعات وتحقيق مستقبل أفضل
-                للجميع.</p>
+            <div class="absolute inset-0 bg-black/40 flex flex-col items-start justify-center text-white px-12 pt-12 ">
+              <h1 class="text-2xl md:text-4xl font-bold drop-shadow-md pt-12">
+                جمعية المستقبل الخيرية
+              </h1>
+              <p class="text-sm md:text-lg mt-2 max-w-xl drop-shadow">
+                مؤسسة رائدة تنهض بالواقع الفلسطيني من أجل تحقيق الاستقرار والتنمية المجتمعية
+              </p>
               <button
-                class="px-6 py-2 mt-4 bg-red-600 text-white rounded-full hover:bg-red-700 transition font-semibold">إكتشف
-                أكثر</button>
+                class="px-6 py-2 mt-4 bg-red-600 text-white rounded-full hover:bg-red-700 transition font-semibold">
+                إكتشف أكثر
+              </button>
             </div>
           </div>
           <div class="swiper-slide relative">
             <img src="images/slide1.jpg" class="w-full h-full object-cover" alt="Slide 4">
-            <div
-              class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white text-center px-4">
-              <h1 class="text-2xl md:text-4xl font-bold drop-shadow-md">شعار المؤسسة واهدافها</h1>
-              <p class="text-sm md:text-lg mt-2 max-w-xl drop-shadow">نحن نعمل من أجل تطوير المجتمعات وتحقيق مستقبل أفضل
-                للجميع.</p>
+            <div class="absolute inset-0 bg-black/40 flex flex-col items-start justify-center text-white px-12 pt-12 ">
+              <h1 class="text-2xl md:text-4xl font-bold drop-shadow-md pt-12">
+                جمعية المستقبل الخيرية
+              </h1>
+              <p class="text-sm md:text-lg mt-2 max-w-xl drop-shadow">
+                مؤسسة رائدة تنهض بالواقع الفلسطيني من أجل تحقيق الاستقرار والتنمية المجتمعية
+              </p>
               <button
-                class="px-6 py-2 mt-4 bg-red-600 text-white rounded-full hover:bg-red-700 transition font-semibold">إكتشف
-                أكثر</button>
+                class="px-6 py-2 mt-4 bg-red-600 text-white rounded-full hover:bg-red-700 transition font-semibold">
+                إكتشف أكثر
+              </button>
             </div>
           </div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
     </section>
+    <!-- About -->
     <section id="about" class="py-16 bg-white" dir="rtl">
       <div class="max-w-screen-xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
 
         <!-- النص مع الرؤية والرسالة -->
-        <div class="text-right space-y-6">
+        <div class="text-right space-y-6" data-aos="fade-left" data-aos-delay="100">
           <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-4"> جمعية المستقبل الخيرية</h2>
           <p class="text-base md:text-lg text-gray-600">
-            هي مؤسسة غير حكومية أنشئت عام 2006 مرخصة من قبل وزارة الداخلية الفلسطينية تحت رقم (7696) ومسجلة لدى
-            وزارة الشؤون الاجتماعية برقم (9070)، تعمل على تفعيل دور النساء والشباب والأطفال وكبار السن وذوي الاحتياجات
+            هي مؤسسة غير حكومية أنشئت عام 2006 مرخصة من قبل وزارة الداخلية الفلسطينية تحت رقم (7696) ومسجلة
+            لدى
+            وزارة الشؤون الاجتماعية برقم (9070)، تعمل على تفعيل دور النساء والشباب والأطفال وكبار السن وذوي
+            الاحتياجات
             ودمجهم في
-            مجتمعاتهم في اطار مجتمع ديمقراطي يتبنى العدالة الاجتماعية وتكافؤ الفرص من خلال برامج تنموية في كافة المجالات
+            مجتمعاتهم في اطار مجتمع ديمقراطي يتبنى العدالة الاجتماعية وتكافؤ الفرص من خلال برامج تنموية في
+            كافة المجالات
             التنموية
             والاجتماعية والتعليمية
           </p>
@@ -336,7 +425,8 @@
             <div>
               <h3 class="text-xl font-semibold text-blue-900">الرسالة</h3>
               <p class="text-gray-600">
-                جمعية المستقبل الخيرية أهلية تنموية ثقافية اجتماعية، تسعى لتمكين وتطوير المرأة والطفل والشباب كي يلعبوا
+                جمعية المستقبل الخيرية أهلية تنموية ثقافية اجتماعية، تسعى لتمكين وتطوير المرأة والطفل
+                والشباب كي يلعبوا
                 دورا رائدا في
                 بناء مجتمع مدني واع.
               </p>
@@ -350,12 +440,8 @@
         </div>
 
         <!-- الصورة -->
-        <!-- <div class="flex justify-center md:justify-start relative">
-          <div class="p-1 rounded-lg border-4 border-blue-900 shadow-lg max-w-full">
-            <img src="images/about.jpeg" alt="نبذة عن المؤسسة" class="rounded-md w-full h-auto object-cover">
-          </div>
-        </div> -->
-        <div class="flex justify-center md:justify-start relative">
+        
+        <div class="flex justify-center md:justify-start relative" data-aos="fade-right" data-aos-delay="100">
           <!-- Dots background image -->
           <img src="images/dots.jpg" alt=""
             class="absolute top-0 left-0 w-40 h-40 -translate-x-6 -translate-y-6 opacity-50 pointer-events-none z-0">
@@ -371,12 +457,13 @@
     </section>
 
     <!-- Activities -->
-    <section id="activities" class="py-16 bg-blue-50 text-center">
+    <section id="activities" class="py-6 bg-blue-50 text-center" data-aos="fade-up" data-aos-delay="100">
       <div class="max-w-screen-xl mx-auto px-4">
         <!-- العنوان -->
         <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-4">أين صنعنا الفارق؟</h2>
         <p class="text-gray-600 text-lg mb-10 max-w-3xl mx-auto">
-          يشمل عملنا مجموعة واسعة من العملاء، من شركات محلية كبرى وشركات متعددة الجنسيات إلى مشاريع ناشئة طموحة ومؤسسات
+          يشمل عملنا مجموعة واسعة من العملاء، من شركات محلية كبرى وشركات متعددة الجنسيات إلى مشاريع ناشئة
+          طموحة ومؤسسات
           دولية تعمل في منطقة الشرق الأوسط وشمال إفريقيا.
         </p>
 
@@ -414,9 +501,11 @@
                 class="w-full h-60 object-cover transform hover:scale-105 transition duration-500 ease-in-out">
             </div>
             <div class="p-5 flex flex-col text-right flex-grow">
-              <h3 class="text-xl font-bold mb-2 text-blue-900"> برنامج التدريب والتشغيل وتنمية القدرات</h3>
+              <h3 class="text-xl font-bold mb-2 text-blue-900"> برنامج التدريب والتشغيل وتنمية القدرات
+              </h3>
               <p class="text-gray-600 mb-4 flex-grow">
-                يهدف البرنامج الى تعزيز قدرات الشباب الاجتماعية والتربوية والقيادية وتمكنهم من لعب أدوار في المجتمع
+                يهدف البرنامج الى تعزيز قدرات الشباب الاجتماعية والتربوية والقيادية وتمكنهم من لعب أدوار
+                في المجتمع
               </p>
               <div class="mt-auto">
                 <a href="/activities/2"
@@ -440,7 +529,8 @@
             <div class="p-5 flex flex-col text-right flex-grow">
               <h3 class="text-xl font-bold mb-2 text-blue-900"> برنامج الحماية والدعم النفسي</h3>
               <p class="text-gray-600 mb-4 flex-grow">
-                تقديم الرعاية الصحية والنفسية والمساعدات الإنسانية في مناطق نائية ومجتمعات بحاجة ماسة إلى الدعم.
+                تقديم الرعاية الصحية والنفسية والمساعدات الإنسانية في مناطق نائية ومجتمعات بحاجة ماسة
+                إلى الدعم.
               </p>
               <div class="mt-auto">
                 <a href="/activities/3"
@@ -469,7 +559,7 @@
 
     <!-- Statistics -->
     <section id="statsSection"
-      class="bg-gradient-to-r from-red-50 to-red-100 rounded-3xl mx-auto my-12 p-8 max-w-6xl text-center shadow-md">
+      class="bg-gradient-to-r from-red-50 to-red-100 rounded-3xl mx-auto my-12 p-8 max-w-6xl text-center shadow-md" data-aos="zoom-in" data-aos-delay="100">
       <h2 class="text-3xl sm:text-4xl font-bold text-blue-900 mb-4">
         إنجازاتنا خلال السنوات الماضية
       </h2>
@@ -482,23 +572,37 @@
       </a>
 
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
-        <div>
+
+        <!-- Card 1 -->
+        <div class="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition duration-300 cursor-pointer">
+          <img src="images/users.png" alt="المستفيدون "
+            class="w-20 h-20 mx-auto mb-4 rounded-full transition-transform duration-300 hover:scale-110" />
           <p class="text-4xl font-bold text-red-700 counter" data-target="150">0</p>
-          <p class="text-gray-800 mt-2">عملاء سعداء</p>
+          <p class="text-gray-800 mt-2"> المستفيدون</p>
         </div>
-        <div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition duration-300 cursor-pointer">
+          <img src="images/programs.png" alt="البرامج"
+            class="w-20 h-20 mx-auto mb-4 rounded-full transition-transform duration-300 hover:scale-110" />
           <p class="text-4xl font-bold text-red-700 counter" data-target="200">0</p>
-          <p class="text-gray-800 mt-2">إجمالي الاستشارات</p>
+          <p class="text-gray-800 mt-2"> البرامج</p>
         </div>
-        <div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition duration-300 cursor-pointer">
+          <img src="images/success.jfif" alt="قصة نجاح"
+            class="w-20 h-20 mx-auto mb-4 rounded-full transition-transform duration-300 hover:scale-110" />
           <p class="text-4xl font-bold text-red-700 counter" data-target="30">0</p>
           <p class="text-gray-800 mt-2">قصة نجاح</p>
         </div>
+
       </div>
     </section>
 
+
     <!-- Partners -->
-    <section id="partners" class="py-10 bg-blue-50">
+    <section id="partners" class="py-10 bg-blue-50" data-aos="fade-up" data-aos-delay="100">
 
       <h2 class="text-3xl font-semibold text-center mb-4 text-blue-900">شركاؤنا في النجاح</h2>
       <p class="text-gray-600 text-center mb-8">شركاؤنا على الدوام</p>
@@ -604,6 +708,7 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/script.js"></script>
 
     <script>
@@ -619,7 +724,7 @@
             counter.innerText = count;
             setTimeout(update, speed);
           } else {
-            counter.innerText = target + "+";
+            counter.innerHTML = target + `<span class="plus-sign">+</span>`;
           }
         };
 
@@ -673,6 +778,14 @@
           768: { slidesPerView: 3, spaceBetween: 20 },
           1024: { slidesPerView: 5, spaceBetween: 20 },
         }
+      });
+      window.addEventListener('load', () => {
+        AOS.init({
+          duration: 1000,
+          easing: 'ease-in-out',
+          once: true,
+          mirror: false
+        })
       });
     </script>
 

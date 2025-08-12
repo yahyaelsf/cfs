@@ -14,6 +14,9 @@ body {
     height: 100%;
     overflow-x: hidden;
 } */
+ body {
+    font-family: 'Cairo', sans-serif;
+}
 
 .swiper {
     width: 100%;
@@ -76,22 +79,54 @@ img {
     height: 50px;
     border-radius: 50%;
 }
-.message{
+
+.message {
     width: 85px;
-        height: 50px;
-        border-radius: 50%;
+    height: 50px;
+    border-radius: 50%;
 }
+
 @media (max-width: 768px) {
     .mission {
         width: 65px;
         height: 40px;
-       
+
     }
-        .message {
-            height: 40px;
-        }
+
+    .message {
+        height: 40px;
+    }
+
     .message svg {
-    width: 40px; 
-    
+        width: 40px;
+
+    }
 }
+
+.desktop-menu .dropdown:hover .dropdown-menu ,.desktop-menu .dropdown .dropdown-menu:hover {
+    display: block !important;
+}
+@keyframes wiggle {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-5px);
+    }
+}
+
+.animate-wiggle {
+    animation: wiggle 1s ease-in-out infinite;
+}
+
+.plus-sign {
+    display: inline-block;
+    transition: transform 0.4s ease;
+}
+
+.plus-sign:hover {
+    transform: rotate(360deg);
 }
