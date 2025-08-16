@@ -21,7 +21,8 @@
   <body class="font-sans text-gray-800">
     <!-- soial media -->
     <!-- Fixed Social Media Sidebar -->
-    <a href="your-link-here" target="_blank" class="fixed bottom-4 right-4 z-50" data-aos="fade-left" data-aos-delay="100">
+    <a href="your-link-here" target="_blank" class="fixed bottom-4 right-4 z-50" data-aos="fade-left"
+      data-aos-delay="100">
       <img src="images/question1.jfif" alt="Question" class="w-16 h-16 shadow-lg shadow-red-500 rounded-full 
                         animate-bounce transition-transform duration-300 hover:scale-110">
     </a>
@@ -52,82 +53,95 @@
     <nav id="navbar" class="bg-white shadow-md sticky top-0 z-50 transition-shadow duration-300">
       <div class="max-w-screen-xl mx-auto px-4 flex items-center justify-between h-16 md:h-22 w-full">
         <div class="flex items-center gap-3">
-          <img id="logo" src="images/logo1.jpeg" alt="Logo"
-            class="w-20 h-20  mt-6 md:w-28 md:h-28 rounded-full transition-all duration-300 object-cover md:mt-14" />
+          <a href="index.html">
+            <img id="logo" src="images/logo1.jpeg" alt="Logo"
+              class="w-20 h-20  mt-6 md:w-28 md:h-28 rounded-full transition-all duration-300 object-cover md:mt-14" />
+          </a>
         </div>
 
         <!-- Desktop Menu -->
         <ul class="hidden lg:flex gap-6 text-lg justify-center flex-1 mr-12 select-none desktop-menu">
-          <li><a href="#home" class="hover:text-yellow-500 transition">الرئيسية</a></li>
+          <li class="p-1"><a href="index.html" class="text-red-500 bg-red-50 p-2  rounded-full transition">الرئيسية</a>
+          </li>
 
-          <!-- البرامج -->
-          <li class="relative dropdown">
+          <!-- من نحن -->
+          <li class="relative dropdown group hover:bg-red-50 p-1 rounded-full">
 
-            <button class="flex items-center gap-1 hover:text-yellow-500 focus:outline-none">
+            <button class="flex items-center gap-1 group-hover:text-red-500 hover:text-red-500 focus:outline-none ">
               من نحن
-              <svg class="w-4 h-4 rtl:ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-4 h-4 rtl:ml-1 mt-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            <ul class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white border rounded shadow-md text-base"
+            <ul
+              class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white border rounded shadow-md text-base group-hover:block"
               role="menu">
-              <li><a href="#education" class="block px-4 py-2 hover:bg-gray-100">الرؤية والرسالة</a></li>
-              <li><a href="#psychology" class="block px-4 py-2 hover:bg-gray-100"> الأهداف
+              <li><a href="about.html" class="block px-4 py-2 hover:bg-gray-100">
+                  عن الجمعية</a></li>
+              <li><a href="about.html#message" class="block px-4 py-2 hover:bg-gray-100">الرؤية
+                  والرسالة</a></li>
+              <li><a href="about.html#goal" class="block px-4 py-2 hover:bg-gray-100"> الأهداف
                   الإستراتيجية</a></li>
-              <li><a href="#relief" class="block px-4 py-2 hover:bg-gray-100"> الخطة الإستراتيجية</a></li>
+              <li><a href="about.html#value" class="block px-4 py-2 hover:bg-gray-100">
+                  قيم وفلسفة المؤسسة</a></li>
+
             </ul>
           </li>
-          <li class="relative dropdown">
-
-            <button class="flex items-center gap-1 hover:text-yellow-500 focus:outline-none">
+          <!-- البرامج -->
+          <li class="relative dropdown group hover:bg-red-50 p-1 rounded-full">
+            <button class="flex items-center gap-1 group-hover:text-red-500 focus:outline-none">
               البرامج
-              <svg class="w-4 h-4 rtl:ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-4 h-4 rtl:ml-1 mt-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            <ul class="dropdown-menu hidden absolute left-0 mt-2 w-60 bg-white border rounded shadow-md text-base"
+            <ul
+              class="dropdown-menu hidden absolute left-0 mt-2 w-60 bg-white border rounded shadow-md text-base group-hover:block"
               role="menu">
-              <li><a href="#education" class="block px-4 py-2 hover:bg-gray-100"> البرنامج التعليمي –
-                  التثقيفي </a></li>
-              <li><a href="#psychology" class="block px-4 py-2 hover:bg-gray-100"> البرنامج الإغاثي
-                  الاجتماعي والامن الغذائي وسبل العيش</a></li>
-              <li><a href="#relief" class="block px-4 py-2 hover:bg-gray-100"> برنامج الحماية والدعم
-                  النفسي</a></li>
-              <li><a href="#economic" class="block px-4 py-2 hover:bg-gray-100"> البرنامج البيئي -
-                  الزراعي</a></li>
-              <li><a href="#agriculture" class="block px-4 py-2 hover:bg-gray-100"> برنامج نوافذ
-                  مجتمعية</a></li>
-              <li><a href="#water" class="block px-4 py-2 hover:bg-gray-100"> برنامج التدريب والتشغيل
-                  وتنمية القدرات</a></li>
+              <li><a href="program.html" class="block px-4 py-2 hover:bg-gray-100"> البرنامج التعليمي – التثقيفي </a></li>
+              <li><a href="#psychology" class="block px-4 py-2 hover:bg-gray-100"> البرنامج الإغاثي الاجتماعي والامن
+                  الغذائي
+                  وسبل العيش</a></li>
+              <li><a href="#relief" class="block px-4 py-2 hover:bg-gray-100"> برنامج الحماية والدعم النفسي</a></li>
+              <li><a href="#economic" class="block px-4 py-2 hover:bg-gray-100"> البرنامج البيئي - الزراعي</a></li>
+              <li><a href="#agriculture" class="block px-4 py-2 hover:bg-gray-100"> برنامج نوافذ مجتمعية</a></li>
+              <li><a href="#water" class="block px-4 py-2 hover:bg-gray-100"> برنامج التدريب والتشغيل وتنمية القدرات</a>
+              </li>
               <li><a href="#shelter" class="block px-4 py-2 hover:bg-gray-100"> البرنامج الرياضي</a></li>
             </ul>
           </li>
 
           <!-- التقارير -->
-          <li class="relative dropdown">
-            <button class="dropdown-toggle flex items-center gap-1 hover:text-yellow-500 focus:outline-none">
+          <li class="relative dropdown group hover:bg-red-50 p-1 rounded-full">
+            <button
+              class="dropdown-toggle flex items-center gap-1 group-hover:text-red-500 hover:text-red-500 focus:outline-none">
               التقارير
-              <svg class="w-4 h-4 rtl:ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-4 h-4 rtl:ml-1 mt-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            <ul class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white border rounded shadow-md text-base"
+            <ul
+              class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white border rounded shadow-md text-base group-hover:block"
               role="menu">
               <li><a href="#admin-reports" class="block px-4 py-2 hover:bg-gray-100">تقارير إدارية</a>
               </li>
+              <li><a href="#policies" class="block px-4 py-2 hover:bg-gray-100">تقارير مالية </a></li>
               <li><a href="#policies" class="block px-4 py-2 hover:bg-gray-100">الأدلة والسياسات</a></li>
+              
             </ul>
           </li>
 
           <!-- المركز الإعلامي -->
-          <li class="relative dropdown">
-            <button class="dropdown-toggle flex items-center gap-1 hover:text-yellow-500 focus:outline-none">
+          <li class="relative dropdown group hover:bg-red-50 p-1 rounded-full">
+            <button
+              class="dropdown-toggle flex items-center gap-1 group-hover:text-red-500 hover:text-red-500 focus:outline-none">
               المركز الإعلامي
-              <svg class="w-4 h-4 rtl:ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-4 h-4 rtl:ml-1 mt-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            <ul class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white border rounded shadow-md text-base"
+            <ul
+              class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white border rounded shadow-md text-base group-hover:block"
               role="menu">
               <li><a href="#news" class="block px-4 py-2 hover:bg-gray-100">الأخبار</a></li>
               <li><a href="#stories" class="block px-4 py-2 hover:bg-gray-100">قصص من الميدان</a></li>
@@ -137,14 +151,16 @@
           </li>
 
           <!-- إعلانات -->
-          <li class="relative dropdown">
-            <button class="dropdown-toggle flex items-center gap-1 hover:text-yellow-500 focus:outline-none">
+          <li class="relative dropdown group hover:bg-red-50 p-1 rounded-full">
+            <button
+              class="dropdown-toggle flex items-center gap-1 group-hover:text-red-500 hover:text-red-500 focus:outline-none">
               إعلانات
-              <svg class="w-4 h-4 rtl:ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-4 h-4 rtl:ml-1 mt-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            <ul class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white border rounded shadow-md text-base"
+            <ul
+              class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white border rounded shadow-md text-base group-hover:block"
               role="menu">
               <li><a href="#tenders" class="block px-4 py-2 hover:bg-gray-100">إعلان عطاء</a></li>
               <li><a href="#jobs" class="block px-4 py-2 hover:bg-gray-100">إعلان توظيف</a></li>
@@ -152,7 +168,8 @@
             </ul>
           </li>
 
-          <li><a href="#contact" class="hover:text-yellow-500 transition">الأنشطة</a></li>
+          <li class="py-1"><a href="#contact"
+              class="hover:text-red-500 hover:bg-red-50 p-2  rounded-full transition">الأنشطة</a></li>
         </ul>
 
         <div class="hidden lg:flex items-center gap-2">
@@ -433,14 +450,14 @@
             </div>
           </div>
 
-          <a href="/about"
+          <a href="about.html"
             class="inline-block bg-red-500 text-white px-6 py-3 rounded-full hover:bg-red-600 transition">
             اقرأ المزيد ←
           </a>
         </div>
 
         <!-- الصورة -->
-        
+
         <div class="flex justify-center md:justify-start relative" data-aos="fade-right" data-aos-delay="100">
           <!-- Dots background image -->
           <img src="images/dots.jpg" alt=""
@@ -559,7 +576,8 @@
 
     <!-- Statistics -->
     <section id="statsSection"
-      class="bg-gradient-to-r from-red-50 to-red-100 rounded-3xl mx-auto my-12 p-8 max-w-6xl text-center shadow-md" data-aos="zoom-in" data-aos-delay="100">
+      class="bg-gradient-to-r from-red-50 to-red-100 rounded-3xl mx-auto my-12 p-8 max-w-6xl text-center shadow-md"
+      data-aos="zoom-in" data-aos-delay="100">
       <h2 class="text-3xl sm:text-4xl font-bold text-blue-900 mb-4">
         إنجازاتنا خلال السنوات الماضية
       </h2>
