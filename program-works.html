@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>المؤسسة المستقبل الخيرية</title>
+        <title>جمعية المستقبل الخيرية</title>
 
         <!-- TailwindCSS -->
         <script src="https://cdn.tailwindcss.com"></script>
@@ -65,16 +65,16 @@
                             class="hover:text-red-500 hover:bg-red-50 p-2  rounded-full transition">الرئيسية</a></li>
 
                     <!-- من نحن -->
-                    <li class="relative dropdown bg-red-50 py-1 rounded-full">
+                    <li class="relative dropdown group hover:bg-red-50 py-1 rounded-full">
 
-                        <button class="flex items-center gap-1 text-red-500 hover:text-red-500 focus:outline-none ">
+                        <button class="flex items-center gap-1 group-hover:text-red-500 focus:outline-none ">
                             من نحن
                             <svg class="w-4 h-4 rtl:ml-1 mt-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
-                        <ul class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white border rounded shadow-md text-base"
+                        <ul class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white border rounded shadow-md text-base group-hover:block"
                             role="menu">
                             <li><a href="about.html" class="block px-4 py-2 hover:bg-gray-100">
                                     عن الجمعية</a></li>
@@ -88,8 +88,8 @@
                         </ul>
                     </li>
                     <!-- البرامج -->
-                    <li class="relative dropdown group hover:bg-red-50 py-1 rounded-full">
-                        <button class="flex items-center gap-1 group-hover:text-red-500 focus:outline-none">
+                    <li class="relative dropdown group bg-red-50 py-1 rounded-full">
+                        <button class="flex items-center gap-1 text-red-500 focus:outline-none">
                             البرامج
                             <svg class="w-4 h-4 rtl:ml-1 mt-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -99,8 +99,8 @@
                         <ul class="dropdown-menu hidden absolute left-0 mt-2 w-60 bg-white border rounded shadow-md text-base group-hover:block"
                             role="menu">
                             <li><a href="program-learn.html" class="block px-4 py-2 hover:bg-gray-100"> البرنامج
-                                    التعليمي – التثقيفي </a>
-                            </li>
+                                    التعليمي –
+                                    التثقيفي </a></li>
                             <li><a href="program-soial.html" class="block px-4 py-2 hover:bg-gray-100"> البرنامج الإغاثي
                                     الاجتماعي والامن الغذائي
                                     وسبل العيش</a></li>
@@ -273,8 +273,7 @@
                             </svg>
                         </button>
                         <ul class="mobile-dropdown-menu hidden pl-4 space-y-1">
-                            <li><a href="program-learn.html" class="block py-1 px-3"> البرنامج التعليمي – التثقيفي </a>
-                            </li>
+                            <li><a href="#education" class="block py-1 px-3"> البرنامج التعليمي – التثقيفي </a></li>
                             <li><a href="program-soial.html" class="block py-1 px-3"> البرنامج الإغاثي الاجتماعي والامن
                                     الغذائي
                                     وسبل
@@ -361,12 +360,14 @@
             </div>
         </nav>
 
+
+
         <section class="bg-blue-50 py-8">
             <div class="max-w-6xl mx-auto px-4 relative">
 
 
                 <!-- Title -->
-                <h1 class="text-3xl font-bold text-blue-900 mt-14 text-right">من نحن</h1>
+                <h1 class="text-3xl font-bold text-blue-900 mt-14 text-right"> البرامج</h1>
 
                 <!-- Breadcrumb -->
                 <div class="flex justify-start items-center mt-2 space-x-2 rtl:space-x-reverse text-gray-500 text-sm">
@@ -379,128 +380,176 @@
                         الرئيسية
                     </a>
                     <span>/</span>
-                    <span>من نحن</span>
+                    <span> البرامج</span>
                     <span>/</span>
-                    <a href="#" class="text-red-600 hover:underline">عن الجمعية</a>
+                    <a href="#" class="text-red-600 hover:underline"> برنامج التدريب والتشغيل وتنمية القدرات</a>
                 </div>
             </div>
         </section>
 
+        <section class="max-w-6xl mx-auto py-10 px-4">
+            <!-- الكارد الرئيسي -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
 
-        <!-- About -->
-        <section id="about" class="py-16 bg-white" dir="rtl">
-            <div class="max-w-screen-xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+                <!-- صورة -->
+                <img src="images/learn.jpg" alt="صورة المشروع" class="w-full h-72 object-cover rounded-t-2xl">
 
-                <!-- النص مع الرؤية والرسالة -->
-                <div class="text-right space-y-6" data-aos="fade-left" data-aos-delay="100">
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-4"> جمعية المستقبل الخيرية</h2>
-                    <p class="text-base md:text-lg text-gray-600" id="message">
-                        هي مؤسسة غير حكومية أنشئت عام 2006 مرخصة من قبل وزارة الداخلية الفلسطينية تحت رقم (7696) ومسجلة
-                        لدى وزارة الشؤون الاجتماعية
-                        برقم (9070)، تعمل على تفعيل دور النساء والشباب والأطفال وكبار السن وذوي الاحتياجات ودمجهم في
-                        مجتمعاتهم في اطار مجتمع
-                        ديمقراطي يتبنى العدالة الاجتماعية وتكافؤ الفرص من خلال برامج تنموية في كافة المجالات التنموية
-                        والاجتماعية والتعليمية،
-                        وتأهيلهم ليكونوا قوة فاعلة ومستدامة في المجتمع الفلسطيني وذلك من خلال التوجهات الاستراتيجية التي
-                        تعمل عليها الجمعية
-                        وتشمل، المشاركة المجتمعية وحرية التعبير عن الرأي والتمكين الاقتصادي للشباب، تنمية وتطوير قدرات
-                        شرائح المجتمع المختلفة
-                        للمساهمة في تحقيق التنمية البشرية والمجتمعية، تعزيز مبادئ الديمقراطية وحقوق الانسان والنزاهة،
-                        التدريب وبناء القدرات،
-                        تمكين النساء المهمشات اقتصادياً واجتماعياً وحقوقياً، استثمار الخبرات والقدرات لكبار السن من خلال
-                        تعزيز مشاركتهم
-                        المجتمعية، تخفيف حدة الفقر للعائلات الفقيرة والتشبيك والمناصر مع الأطراف ذوي العلاقة.
-                    </p>
-                </div>
+                <!-- محتوى -->
+                <div class="p-6 flex flex-col md:flex-row md:justify-between md:gap-6">
 
-                <!-- الصورة -->
-
-                <div class="flex justify-center md:justify-start relative" data-aos="fade-right" data-aos-delay="100">
-                    <!-- Dots background image -->
-                    <img src="images/dots.jpg" alt=""
-                        class="absolute top-0 left-0 w-40 h-40 -translate-x-6 -translate-y-6 opacity-50 pointer-events-none z-0">
-
-                    <!-- Main image container -->
-                    <div
-                        class="p-1 rounded-lg border-4 border-blue-900 shadow-lg max-w-full relative z-10 bg-white transform hover:scale-105 transition duration-500 ease-in-out">
-                        <img src="images/about.jpeg" alt="نبذة عن المؤسسة"
-                            class="rounded-md w-full h-auto object-cover">
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Vision & Mission -->
-        <section class="bg-gray-50 py-10" dir="rtl">
-            <div class="max-w-6xl mx-auto px-4">
-
-                <!-- الرؤية والرسالة -->
-                <div class="grid md:grid-cols-2 gap-6 mb-6">
-                    <!-- الرؤية -->
-                    <div class="bg-white rounded-2xl shadow p-6 flex items-start gap-4 border border-gray-200">
-                        <div class="w-12 h-10 flex items-center justify-center rounded-full border border-gray-300">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 35 35">
-                                <g id="vuesax_linear_eye" data-name="vuesax/linear/eye"
-                                    transform="translate(-108 -188)">
-                                    <g id="eye" transform="translate(108 188)">
-                                        <path id="Vector"
-                                            d="M10.288,5.144A5.144,5.144,0,1,1,5.144,0,5.139,5.139,0,0,1,10.288,5.144Z"
-                                            transform="translate(12.356 12.356)" fill="none" stroke="#1e3a8a"
-                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path>
-                                        <path id="Vector-2" data-name="Vector"
-                                            d="M14.317,24.295c5.165,0,9.979-3.053,13.33-8.338a7.84,7.84,0,0,0,0-7.619C24.3,3.053,19.482,0,14.317,0S4.338,3.053.988,8.338a7.84,7.84,0,0,0,0,7.619C4.338,21.241,9.152,24.295,14.317,24.295Z"
-                                            transform="translate(3.183 5.345)" fill="none" stroke="#1e3a8a"
-                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path>
-                                        <path id="Vector-3" data-name="Vector" d="M0,0H35V35H0Z"
-                                            transform="translate(35 35) rotate(180)" fill="none" opacity="0"></path>
-                                    </g>
-                                </g>
+                    <!-- العمود الأيمن (الوصف) -->
+                    <div class="md:w-3/4">
+                        <!-- التاريخ -->
+                        <div class="flex items-center text-gray-500 text-sm mb-2">
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 
+                                       0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                             </svg>
+                            <span>2025-08-16</span>
                         </div>
-                        <div>
-                            <h3 class="text-lg font-bold text-blue-900">الرؤية</h3>
-                            <p class="text-gray-600 mt-1">
-                                مؤسسة رائدة تنهض بالواقع الفلسطيني من أجل تحقيق الاستقرار والتنمية المجتمعية.
-                            </p>
+
+                        <!-- العنوان -->
+                        <h2 class="text-2xl font-bold text-blue-900 mb-3">
+                            برنامج التدريب والتشغيل وتنمية القدرات
+                        </h2>
+
+                        <!-- النص الأساسي -->
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            يهدف البرنامج إلى تمكين الشباب وتنمية مهاراتهم القيادية والتربوية والاجتماعية بما يعزز دورهم
+                            في المجتمع، إضافةً إلى بناء قدرات العاملين والمتطوعين في المؤسسة لضمان استدامة العمل
+                            المؤسسي. كما يركز البرنامج على توفير فرص عمل للشباب والخريجين، وتمكينهم من الاعتماد على
+                            أنفسهم والمشاركة بفعالية في التنمية المجتمعية.
+                            ويرتكز البرنامج على المحاور التالية:
+
+                        </p>
+
+                        <!-- النقاط -->
+                        <ul class="list-disc pr-6 space-y-2 text-gray-700 leading-relaxed">
+                            <li>خلق فرص عمل مؤقتة ودائمة للشباب/ات والعمال.</li>
+                            <li>تنفيذ تدريبات مهنية متخصصة في مجالات متعددة وفق احتياجات سوق العمل.</li>
+                            <li>برامج تدريبية لبناء القدرات المؤسسية للعاملين والمتطوعين في الجمعية.</li>
+                            <li>تطوير مهارات القيادة والعمل المجتمعي للشباب لتعزيز مشاركتهم في صنع القرار.</li>
+                            <li>إطلاق مبادرات شبابية تعزز الابتكار والإبداع في المجالات التنموية.</li>
+                        </ul>
+                    </div>
+
+                    <!-- العمود الأيسر (روابط المشاركة) -->
+                    <div class="mt-6 md:mt-0 md:w-1/4">
+                        <div class="border rounded-2xl p-4 shadow-sm bg-white">
+                            <h3 class="text-gray-700 font-semibold mb-3 text-sm">شارك هذا البرنامج</h3>
+                            <div class="flex flex-wrap gap-3">
+                                <!-- واتساب -->
+                                <a href="#"
+                                    class="flex items-center justify-center w-10 h-10 border border-green-500 text-green-500 rounded-full hover:bg-green-500 hover:text-white transition">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <!-- تليجرام -->
+                                <a href="#"
+                                    class="flex items-center justify-center w-10 h-10 border border-sky-500 text-sky-500 rounded-full hover:bg-sky-500 hover:text-white transition">
+                                    <i class="fab fa-telegram-plane"></i>
+                                </a>
+                                <!-- لينكدإن -->
+                                <a href="#"
+                                    class="flex items-center justify-center w-10 h-10 border border-blue-600 text-blue-600 rounded-full hover:bg-blue-600 hover:text-white transition">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <!-- تويتر -->
+                                <a href="#"
+                                    class="flex items-center justify-center w-10 h-10 border border-sky-400 text-sky-400 rounded-full hover:bg-sky-400 hover:text-white transition">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <!-- فيسبوك -->
+                                <a href="#"
+                                    class="flex items-center justify-center w-10 h-10 border border-blue-500 text-blue-500 rounded-full hover:bg-blue-500 hover:text-white transition">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <!-- نسخ الرابط -->
+                                <a href="#"
+                                    class="flex items-center justify-center w-10 h-10 border border-gray-500 text-gray-600 rounded-full hover:bg-gray-600 hover:text-white transition">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- الرسالة -->
-                    <div class="bg-white rounded-2xl shadow p-6 flex items-start gap-4 border border-gray-200">
-                        <div class="w-12 h-10 flex items-center justify-center rounded-full border border-gray-300">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" viewBox="0 0 35 35">
-                                <g id="vuesax_linear_message-text" data-name="vuesax/linear/message-text"
-                                    transform="translate(-236 -250)">
-                                    <g id="message-text" transform="translate(236 250)">
-                                        <path id="Vector"
-                                            d="M9.484,24.8h-.73C2.918,24.8,0,23.346,0,16.05v-7.3Q0,0,8.755,0H20.428q8.755,0,8.755,8.755v7.3q0,8.755-8.755,8.755H19.7a1.479,1.479,0,0,0-1.167.584l-2.189,2.918a2.073,2.073,0,0,1-3.5,0l-2.189-2.918A1.649,1.649,0,0,0,9.484,24.8Z"
-                                            transform="translate(2.909 2.909)" fill="none" stroke="#1e3a8a"
-                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path>
-                                        <path id="Vector-2" data-name="Vector" d="M0,0H14.543"
-                                            transform="translate(10.228 11.667)" fill="none" stroke="#1e3a8a"
-                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path>
-                                        <path id="Vector-3" data-name="Vector" d="M0,0H8.726"
-                                            transform="translate(10.218 18.958)" fill="none" stroke="#1e3a8a"
-                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path>
-                                        <path id="Vector-4" data-name="Vector" d="M0,0H35V35H0Z" fill="none"
-                                            opacity="0"></path>
-                                    </g>
-                                </g>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold text-blue-900">الرسالة</h3>
-                            <p class="text-gray-600 mt-1">
-                                جمعية أهلية تنموية ثقافية اجتماعية، تسعى لتمكين وتطوير المرأة والطفل والشباب كي يلعبوا
-                                دورا رائدا في
-                                بناء مجتمع مدني واع.
-                            </p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
+
+        <section class="max-w-6xl mx-auto py-12 px-4">
+            <h2 class="text-3xl sm:text-4xl font-bold text-blue-900 text-start mb-8">برامج ذات صلة </h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <!-- برنامج 1 -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <a href="">
+                        <img src="images/sport.jpg" alt="برنامج 1" class="w-full h-48 object-cover">
+                        <div class="p-6 text-center">
+                            <div class="flex items-center text-gray-500 text-sm mb-2">
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 
+                                                                                       0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                </svg>
+                                <span>2025-08-16</span>
+                            </div>
+                            <h3 class="text-xl font-semibold text-start mb-2"> البرنامج الرياضي</h3>
+                            <p class="text-gray-600 mb-4 text-start">وصف قصير عن البرنامج يوضح أهم مميزاته وفائدته.</p>
+
+                        </div>
+                    </a>
+                </div>
+
+                <!-- برنامج 2 -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <a href="">
+                        <img src="images/sport.jpg" alt="برنامج 1" class="w-full h-48 object-cover">
+                        <div class="p-6 text-center">
+                            <div class="flex items-center text-gray-500 text-sm mb-2">
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 
+                                                                                                       0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                </svg>
+                                <span>2025-08-16</span>
+                            </div>
+                            <h3 class="text-xl font-semibold text-start mb-2"> البرنامج الرياضي</h3>
+                            <p class="text-gray-600 mb-4 text-start">وصف قصير عن البرنامج يوضح أهم مميزاته وفائدته.</p>
+
+                        </div>
+                    </a>
+                </div>
+
+                <!-- برنامج 3 -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <a href="">
+                        <img src="images/sport.jpg" alt="برنامج 1" class="w-full h-48 object-cover">
+                        <div class="p-6 text-center">
+                            <div class="flex items-center text-gray-500 text-sm mb-2">
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 
+                                                                                                       0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                </svg>
+                                <span>2025-08-16</span>
+                            </div>
+                            <h3 class="text-xl font-semibold text-start mb-2"> البرنامج الرياضي</h3>
+                            <p class="text-gray-600 mb-4 text-start">وصف قصير عن البرنامج يوضح أهم مميزاته وفائدته.</p>
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
 
 
         <!-- Partners -->

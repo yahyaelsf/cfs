@@ -65,16 +65,17 @@
                             class="hover:text-red-500 hover:bg-red-50 p-2  rounded-full transition">الرئيسية</a></li>
 
                     <!-- من نحن -->
-                    <li class="relative dropdown bg-red-50 py-1 rounded-full">
+                    <li class="relative dropdown group hover:bg-red-50 py-1 rounded-full">
 
-                        <button class="flex items-center gap-1 text-red-500 hover:text-red-500 focus:outline-none ">
+                        <button
+                            class="flex items-center gap-1 group-hover:text-red-500 hover:text-red-500 focus:outline-none ">
                             من نحن
                             <svg class="w-4 h-4 rtl:ml-1 mt-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
-                        <ul class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white border rounded shadow-md text-base"
+                        <ul class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white border rounded shadow-md text-base group-hover:block"
                             role="menu">
                             <li><a href="about.html" class="block px-4 py-2 hover:bg-gray-100">
                                     عن الجمعية</a></li>
@@ -98,8 +99,7 @@
                         </button>
                         <ul class="dropdown-menu hidden absolute left-0 mt-2 w-60 bg-white border rounded shadow-md text-base group-hover:block"
                             role="menu">
-                            <li><a href="program-learn.html" class="block px-4 py-2 hover:bg-gray-100"> البرنامج
-                                    التعليمي – التثقيفي </a>
+                            <li><a href="" class="block px-4 py-2 hover:bg-gray-100"> البرنامج التعليمي – التثقيفي </a>
                             </li>
                             <li><a href="program-soial.html" class="block px-4 py-2 hover:bg-gray-100"> البرنامج الإغاثي
                                     الاجتماعي والامن الغذائي
@@ -366,7 +366,7 @@
 
 
                 <!-- Title -->
-                <h1 class="text-3xl font-bold text-blue-900 mt-14 text-right">من نحن</h1>
+                <h1 class="text-3xl font-bold text-blue-900 mt-14 text-right"> تواصل معنا</h1>
 
                 <!-- Breadcrumb -->
                 <div class="flex justify-start items-center mt-2 space-x-2 rtl:space-x-reverse text-gray-500 text-sm">
@@ -379,123 +379,243 @@
                         الرئيسية
                     </a>
                     <span>/</span>
-                    <span>من نحن</span>
-                    <span>/</span>
-                    <a href="#" class="text-red-600 hover:underline">عن الجمعية</a>
+
+                    <a href="#" class="text-red-600 hover:underline"> تواصل معنا</a>
                 </div>
             </div>
         </section>
 
 
-        <!-- About -->
-        <section id="about" class="py-16 bg-white" dir="rtl">
-            <div class="max-w-screen-xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+        <section>
+            <div class="py-12 bg-gray-50">
+                <div class="max-w-5xl mx-auto px-4">
+                    <form action="https://saed.newlinetech.site/contact-us" method="post" id="form"
+                        class="bg-white shadow-lg rounded-2xl p-8 space-y-6">
+                        <h1 class="text-2xl font-bold text-gray-800">أرسل رسالتك...</h1>
+                        <p class="text-gray-600">يمكنك إرسال كافة اقتراحاتك واستفساراتك، وسنعاود الاتصال بك في أقرب وقت
+                            ممكن</p>
 
-                <!-- النص مع الرؤية والرسالة -->
-                <div class="text-right space-y-6" data-aos="fade-left" data-aos-delay="100">
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-4"> جمعية المستقبل الخيرية</h2>
-                    <p class="text-base md:text-lg text-gray-600" id="message">
-                        هي مؤسسة غير حكومية أنشئت عام 2006 مرخصة من قبل وزارة الداخلية الفلسطينية تحت رقم (7696) ومسجلة
-                        لدى وزارة الشؤون الاجتماعية
-                        برقم (9070)، تعمل على تفعيل دور النساء والشباب والأطفال وكبار السن وذوي الاحتياجات ودمجهم في
-                        مجتمعاتهم في اطار مجتمع
-                        ديمقراطي يتبنى العدالة الاجتماعية وتكافؤ الفرص من خلال برامج تنموية في كافة المجالات التنموية
-                        والاجتماعية والتعليمية،
-                        وتأهيلهم ليكونوا قوة فاعلة ومستدامة في المجتمع الفلسطيني وذلك من خلال التوجهات الاستراتيجية التي
-                        تعمل عليها الجمعية
-                        وتشمل، المشاركة المجتمعية وحرية التعبير عن الرأي والتمكين الاقتصادي للشباب، تنمية وتطوير قدرات
-                        شرائح المجتمع المختلفة
-                        للمساهمة في تحقيق التنمية البشرية والمجتمعية، تعزيز مبادئ الديمقراطية وحقوق الانسان والنزاهة،
-                        التدريب وبناء القدرات،
-                        تمكين النساء المهمشات اقتصادياً واجتماعياً وحقوقياً، استثمار الخبرات والقدرات لكبار السن من خلال
-                        تعزيز مشاركتهم
-                        المجتمعية، تخفيف حدة الفقر للعائلات الفقيرة والتشبيك والمناصر مع الأطراف ذوي العلاقة.
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                            <!-- الاسم -->
+                            <div>
+                                <p class="mb-2 text-sm font-medium text-gray-700">الاسم كاملاً</p>
+                                <div
+                                    class="flex items-center gap-2 border rounded-lg px-3 py-2 bg-gray-50 focus-within:ring-2 focus-within:ring-blue-500">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.009 10.75C9.66503 10.75 7.75903 8.843 7.75903 6.5C7.75903 4.157 9.66503 2.25 12.009 2.25C14.353 2.25 16.259 4.157 16.259 6.5C16.259 8.843 14.353 10.75 12.009 10.75ZM12.009 3.75C10.492 3.75 9.25903 4.983 9.25903 6.5C9.25903 8.017 10.492 9.25 12.009 9.25C13.526 9.25 14.759 8.017 14.759 6.5C14.759 4.983 13.525 3.75 12.009 3.75ZM15.9969 21.75H8.00305C5.58305 21.75 4.25 20.425 4.25 18.019C4.25 15.358 5.756 12.25 10 12.25H14C18.244 12.25 19.75 15.357 19.75 18.019C19.75 20.425 18.4169 21.75 15.9969 21.75ZM10 13.75C6.057 13.75 5.75 17.017 5.75 18.019C5.75 19.583 6.42405 20.25 8.00305 20.25H15.9969C17.5759 20.25 18.25 19.583 18.25 18.019C18.25 17.018 17.943 13.75 14 13.75H10Z"
+                                            fill="#999999"></path>
+                                    </svg>
+                                    <input type="text" name="s_name" id="name" placeholder="أدخل اسمك كاملاً" required
+                                        class="w-full bg-transparent outline-none text-gray-700 placeholder-gray-400" />
+                                </div>
+                            </div>
+
+                            <!-- البريد -->
+                            <div>
+                                <p class="mb-2 text-sm font-medium text-gray-700">البريد الإلكتروني</p>
+                                <div
+                                    class="flex items-center gap-2 border rounded-lg px-3 py-2 bg-gray-50 focus-within:ring-2 focus-within:ring-blue-500">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17 21.25H7C3.35 21.25 1.25 19.15 1.25 15.5V8.5C1.25 4.85 3.35 2.75 7 2.75H17C20.65 2.75 22.75 4.85 22.75 8.5V15.5C22.75 19.15 20.65 21.25 17 21.25ZM7 4.25C4.14 4.25 2.75 5.64 2.75 8.5V15.5C2.75 18.36 4.14 19.75 7 19.75H17C19.86 19.75 21.25 18.36 21.25 15.5V8.5C21.25 5.64 19.86 4.25 17 4.25H7Z"
+                                            fill="#999999"></path>
+                                        <path
+                                            d="M11.9988 12.87C11.1588 12.87 10.3088 12.61 9.6588 12.08L6.5288 9.57997C6.2088 9.31997 6.14881 8.84997 6.4088 8.52997C6.6688 8.20997 7.13881 8.14997 7.45881 8.40997L10.5888 10.91C11.3488 11.52 12.6388 11.52 13.3988 10.91L16.5288 8.40997C16.8488 8.14997 17.3288 8.19997 17.5788 8.52997C17.8388 8.84997 17.7888 9.32997 17.4588 9.57997L14.3288 12.08C13.6888 12.61 12.8388 12.87 11.9988 12.87Z"
+                                            fill="#999999"></path>
+                                    </svg>
+                                    <input type="email" name="s_email" id="email" placeholder="أدخل بريدك الإلكتروني"
+                                        required
+                                        class="w-full bg-transparent outline-none text-gray-700 placeholder-gray-400" />
+                                </div>
+                            </div>
+
+                            <!-- الهاتف -->
+                            <div>
+                                <p class="mb-2 text-sm font-medium text-gray-700">رقم الهاتف</p>
+                                <div
+                                    class="flex items-center gap-2 border rounded-lg px-3 py-2 bg-gray-50 focus-within:ring-2 focus-within:ring-blue-500">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16 21.75H8C5.582 21.75 4.25 20.418 4.25 18V6C4.25 3.582 5.582 2.25 8 2.25H16C18.418 2.25 19.75 3.582 19.75 6V18C19.75 20.418 18.418 21.75 16 21.75ZM8 3.75C6.423 3.75 5.75 4.423 5.75 6V18C5.75 19.577 6.423 20.25 8 20.25H16C17.577 20.25 18.25 19.577 18.25 18V6C18.25 4.423 17.577 3.75 16 3.75H8ZM14.25 6C14.25 5.586 13.914 5.25 13.5 5.25H10.5C10.086 5.25 9.75 5.586 9.75 6C9.75 6.414 10.086 6.75 10.5 6.75H13.5C13.914 6.75 14.25 6.414 14.25 6ZM12 17C11.448 17 11 17.448 11 18C11 18.552 11.448 19 12 19C12.552 19 13 18.552 13 18C13 17.448 12.552 17 12 17Z"
+                                            fill="#999999"></path>
+                                    </svg>
+                                    <input type="text" name="s_mobile" id="mobile_number" placeholder="أدخل رقم جوالك"
+                                        pattern="[0-9]{10}" required
+                                        class="w-full bg-transparent outline-none text-gray-700 placeholder-gray-400" />
+                                </div>
+                            </div>
+
+                            <!-- عنوان الرسالة -->
+                            <div>
+                                <p class="mb-2 text-sm font-medium text-gray-700">عنوان الرسالة</p>
+                                <div
+                                    class="flex items-center gap-2 border rounded-lg px-3 py-2 bg-gray-50 focus-within:ring-2 focus-within:ring-blue-500">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3 21.75C2.903 21.75 2.80589 21.731 2.71289 21.693C2.43289 21.577 2.25 21.303 2.25 21V6C2.25 3.582 3.582 2.25 6 2.25H18C20.418 2.25 21.75 3.582 21.75 6V15C21.75 17.418 20.418 18.75 18 18.75H6.31104L3.53101 21.53C3.38701 21.674 3.195 21.75 3 21.75ZM6 3.75C4.423 3.75 3.75 4.423 3.75 6V19.189L5.46997 17.469C5.61097 17.328 5.801 17.249 6 17.249H18C19.577 17.249 20.25 16.576 20.25 14.999V5.99902C20.25 4.42202 19.577 3.74902 18 3.74902H6V3.75ZM16.75 8.5C16.75 8.086 16.414 7.75 16 7.75H8C7.586 7.75 7.25 8.086 7.25 8.5C7.25 8.914 7.586 9.25 8 9.25H16C16.414 9.25 16.75 8.914 16.75 8.5ZM13.75 12.5C13.75 12.086 13.414 11.75 13 11.75H8C7.586 11.75 7.25 12.086 7.25 12.5C7.25 12.914 7.586 13.25 8 13.25H13C13.414 13.25 13.75 12.914 13.75 12.5Z"
+                                            fill="#999999"></path>
+                                    </svg>
+                                    <input type="text" name="s_title" id="title" placeholder="أدخل عنوان رسالتك"
+                                        required
+                                        class="w-full bg-transparent outline-none text-gray-700 placeholder-gray-400" />
+                                </div>
+                            </div>
+
+                            <!-- الرسالة -->
+                            <div class="md:col-span-2">
+                                <p class="mb-2 text-sm font-medium text-gray-700">الرسالة</p>
+                                <div
+                                    class="flex items-start gap-2 border rounded-lg px-3 py-2 bg-gray-50 focus-within:ring-2 focus-within:ring-blue-500">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M21 5.25H3C2.59 5.25 2.25 4.91 2.25 4.5C2.25 4.09 2.59 3.75 3 3.75H21C21.41 3.75 21.75 4.09 21.75 4.5C21.75 4.91 21.41 5.25 21 5.25Z"
+                                            fill="#999999"></path>
+                                        <path
+                                            d="M20.9993 10.25H11.5293C11.1193 10.25 10.7793 9.91 10.7793 9.5C10.7793 9.09 11.1193 8.75 11.5293 8.75H20.9993C21.4093 8.75 21.7493 9.09 21.7493 9.5C21.7493 9.91 21.4093 10.25 20.9993 10.25Z"
+                                            fill="#999999"></path>
+                                        <path
+                                            d="M21 15.25H3C2.59 15.25 2.25 14.91 2.25 14.5C2.25 14.09 2.59 13.75 3 13.75H21C21.41 13.75 21.75 14.09 21.75 14.5C21.75 14.91 21.41 15.25 21 15.25Z"
+                                            fill="#999999"></path>
+                                        <path
+                                            d="M20.9993 20.25H11.5293C11.1193 20.25 10.7793 19.91 10.7793 19.5C10.7793 19.09 11.1193 18.75 11.5293 18.75H20.9993C21.4093 18.75 21.7493 19.09 21.7493 19.5C21.7493 19.91 21.4093 20.25 20.9993 20.25Z"
+                                            fill="#999999"></path>
+                                    </svg>
+                                    <textarea name="s_content" id="content" placeholder="أدخل نص رسالتك هنا" rows="6"
+                                        required
+                                        class="w-full bg-transparent outline-none text-gray-700 placeholder-gray-400 resize-none"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- زر الإرسال -->
+                        <div class="text-center">
+                            <button type="submit" id="send"
+                                class="bg-red-500 hover:bg-red-600 text-white font-semibold px-8 py-3 rounded-full transition">
+                                إرسال الرسالة
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+        <!-- info -->
+        <section class="flex justify-center items-center min-h-screen bg-gray-50">
+            <div class="max-w-5xl py-16 bg-white rounded-2xl shadow-lg w-full">
+                <div class="mx-auto px-4 text-center">
+                    <!-- العنوان والوصف -->
+                    <h1 class="text-3xl font-bold mb-4">بيانات التواصل</h1>
+                    <p class="text-gray-600 max-w-2xl mx-auto mb-12">
+                        مرحبا بك، يمكنك التواصل معنا في أي وقت ترغب، وسنكون سعداء بخدمتك والاستماع إلى جميع اقتراحاتك
+                        واستفساراتك.
                     </p>
-                </div>
 
-                <!-- الصورة -->
-
-                <div class="flex justify-center md:justify-start relative" data-aos="fade-right" data-aos-delay="100">
-                    <!-- Dots background image -->
-                    <img src="images/dots.jpg" alt=""
-                        class="absolute top-0 left-0 w-40 h-40 -translate-x-6 -translate-y-6 opacity-50 pointer-events-none z-0">
-
-                    <!-- Main image container -->
-                    <div
-                        class="p-1 rounded-lg border-4 border-blue-900 shadow-lg max-w-full relative z-10 bg-white transform hover:scale-105 transition duration-500 ease-in-out">
-                        <img src="images/about.jpeg" alt="نبذة عن المؤسسة"
-                            class="rounded-md w-full h-auto object-cover">
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Vision & Mission -->
-        <section class="bg-gray-50 py-10" dir="rtl">
-            <div class="max-w-6xl mx-auto px-4">
-
-                <!-- الرؤية والرسالة -->
-                <div class="grid md:grid-cols-2 gap-6 mb-6">
-                    <!-- الرؤية -->
-                    <div class="bg-white rounded-2xl shadow p-6 flex items-start gap-4 border border-gray-200">
-                        <div class="w-12 h-10 flex items-center justify-center rounded-full border border-gray-300">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 35 35">
-                                <g id="vuesax_linear_eye" data-name="vuesax/linear/eye"
-                                    transform="translate(-108 -188)">
-                                    <g id="eye" transform="translate(108 188)">
-                                        <path id="Vector"
-                                            d="M10.288,5.144A5.144,5.144,0,1,1,5.144,0,5.139,5.139,0,0,1,10.288,5.144Z"
-                                            transform="translate(12.356 12.356)" fill="none" stroke="#1e3a8a"
-                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path>
-                                        <path id="Vector-2" data-name="Vector"
-                                            d="M14.317,24.295c5.165,0,9.979-3.053,13.33-8.338a7.84,7.84,0,0,0,0-7.619C24.3,3.053,19.482,0,14.317,0S4.338,3.053.988,8.338a7.84,7.84,0,0,0,0,7.619C4.338,21.241,9.152,24.295,14.317,24.295Z"
-                                            transform="translate(3.183 5.345)" fill="none" stroke="#1e3a8a"
-                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path>
-                                        <path id="Vector-3" data-name="Vector" d="M0,0H35V35H0Z"
-                                            transform="translate(35 35) rotate(180)" fill="none" opacity="0"></path>
-                                    </g>
-                                </g>
-                            </svg>
+                    <!-- البطاقات -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+                        <!-- بطاقة البريد الإلكتروني -->
+                        <div class="bg-[#F2FCFF] shadow-md rounded-xl p-6 hover:shadow-lg transition">
+                            <div
+                                class="w-20 h-20 flex items-center justify-center rounded-full bg-[#bbeffc80] mx-auto mb-4">
+                                <!-- الأيقونة -->
+                                <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M50.1466 20.5232V49.0273C50.1466 50.0985 49.2844 50.9607 48.2132 50.9607H3.78503C2.72038 50.9607 1.85156 50.0985 1.85156 49.0273V20.5232H50.1466Z"
+                                        fill="#FFCA67"></path>
+                                    <path
+                                        d="M50.1471 20.5233L43.9809 24.338L25.9993 35.4671L8.01772 24.338L1.85156 20.5233L8.01772 16.7086L25.9993 6.88477L43.9809 16.7086L50.1471 20.5233Z"
+                                        fill="#F2CB8B"></path>
+                                    <path
+                                        d="M50.1466 46.9893V49.0272C50.1466 50.0984 49.2844 50.9605 48.2132 50.9605H3.78503C2.72038 50.9605 1.85156 50.0984 1.85156 49.0272V46.9893L25.9991 32.0449L50.1466 46.9893Z"
+                                        fill="#EBB660"></path>
+                                    <path
+                                        d="M43.9808 8.40746V24.3382L25.9992 35.4672L8.01758 24.3382V1.03906H36.6134L43.9808 8.40746Z"
+                                        fill="#E4E4E3">
+                                    </path>
+                                    <path
+                                        d="M25.797 26.0932C20.1347 26.0968 15.7207 21.9169 15.7207 16.0965C15.7207 10.3916 20.2742 5.71838 26.0865 5.71484C31.9207 5.71484 36.2792 10.3818 36.2792 16.1972C36.2792 18.9892 35.2554 22.3443 32.4508 22.3443C30.9455 22.3443 29.7404 21.3495 29.6713 19.0545C28.7212 21.2478 27.199 22.3443 25.1082 22.3461C22.3996 22.3461 19.5738 19.9919 19.5738 16.1231C19.5738 12.6888 21.6907 9.74838 25.3377 9.74464C26.1147 9.74464 26.8564 9.94775 27.5557 10.3556C28.2515 10.7653 28.7529 11.2492 29.0603 11.8107V10.1013H31.5078V19.0031C31.5078 20.1933 31.9776 20.7885 32.9099 20.7885C34.3971 20.7885 35.0007 18.1334 35.0007 16.5803C35.0007 11.3861 31.6372 6.83617 26.1925 6.83617C20.8266 6.83981 16.8403 11.1483 16.8403 16.0965C16.8403 21.2181 20.7324 24.9737 25.7968 24.9701C27.8383 24.9701 29.3993 24.4598 30.487 23.4409L31.0522 24.3839C29.7603 25.4886 27.5171 26.0932 25.797 26.0932ZM29.0851 16.0065C29.0851 13.865 27.7292 12.2186 25.5922 12.2186C23.4395 12.2222 22.1452 13.9552 22.1452 16.0082C22.1452 18.0252 23.3689 19.9746 25.6169 19.971C27.8697 19.9709 29.0851 18.0901 29.0851 16.0065Z"
+                                        fill="#FF7802"></path>
+                                    <path d="M43.9806 8.40746H36.6133V1.03906L43.9806 8.40746Z" fill="#C7C7C7"></path>
+                                </svg>
+                            </div>
+                            <div class="text-center">
+                                <p class="font-semibold text-lg mb-1">البريد الإلكتروني</p>
+                                <p class="text-gray-500 mb-2">راسل فريقنا المتعاون عبر</p>
+                                <p class="font-medium text-blue-600">support@gmail.com</p>
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="text-lg font-bold text-blue-900">الرؤية</h3>
-                            <p class="text-gray-600 mt-1">
-                                مؤسسة رائدة تنهض بالواقع الفلسطيني من أجل تحقيق الاستقرار والتنمية المجتمعية.
-                            </p>
-                        </div>
-                    </div>
 
-                    <!-- الرسالة -->
-                    <div class="bg-white rounded-2xl shadow p-6 flex items-start gap-4 border border-gray-200">
-                        <div class="w-12 h-10 flex items-center justify-center rounded-full border border-gray-300">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" viewBox="0 0 35 35">
-                                <g id="vuesax_linear_message-text" data-name="vuesax/linear/message-text"
-                                    transform="translate(-236 -250)">
-                                    <g id="message-text" transform="translate(236 250)">
-                                        <path id="Vector"
-                                            d="M9.484,24.8h-.73C2.918,24.8,0,23.346,0,16.05v-7.3Q0,0,8.755,0H20.428q8.755,0,8.755,8.755v7.3q0,8.755-8.755,8.755H19.7a1.479,1.479,0,0,0-1.167.584l-2.189,2.918a2.073,2.073,0,0,1-3.5,0l-2.189-2.918A1.649,1.649,0,0,0,9.484,24.8Z"
-                                            transform="translate(2.909 2.909)" fill="none" stroke="#1e3a8a"
-                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path>
-                                        <path id="Vector-2" data-name="Vector" d="M0,0H14.543"
-                                            transform="translate(10.228 11.667)" fill="none" stroke="#1e3a8a"
-                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path>
-                                        <path id="Vector-3" data-name="Vector" d="M0,0H8.726"
-                                            transform="translate(10.218 18.958)" fill="none" stroke="#1e3a8a"
-                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path>
-                                        <path id="Vector-4" data-name="Vector" d="M0,0H35V35H0Z" fill="none"
-                                            opacity="0"></path>
-                                    </g>
-                                </g>
-                            </svg>
+                        <!-- بطاقة الهاتف -->
+                        <div class="bg-[#FFF9F2] shadow-md rounded-xl p-6 hover:shadow-lg transition">
+                            <div
+                                class="w-20 h-20 flex items-center justify-center rounded-full bg-[#fcdeb880] mx-auto mb-4">
+                                <!-- الأيقونة -->
+                                <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M28 11.7017V30.3334L32.6667 25.6667H46.6293C47.2482 25.6667 47.8417 25.4209 48.2793 24.9833C48.7168 24.5457 48.9627 23.9522 48.9627 23.3334V11.7017C48.9627 11.0829 48.7168 10.4894 48.2793 10.0518C47.8417 9.61424 47.2482 9.36841 46.6293 9.36841H30.3333C29.7145 9.36841 29.121 9.61424 28.6834 10.0518C28.2458 10.4894 28 11.0829 28 11.7017Z"
+                                        fill="#1495D9"></path>
+                                    <path
+                                        d="M45.6307 34.5683C43.0864 34.573 40.5577 34.1705 38.1407 33.376C36.9483 32.9677 35.21 33.6817 34.811 34.076C33.7307 35.1493 30.667 38.2107 30.667 38.2107C25.1979 35.2812 20.7229 30.7924 17.8103 25.3143C17.8103 25.3143 20.7597 22.3417 21.8167 21.3103C22.484 20.657 23.037 19.103 22.652 17.871C21.8545 15.4505 21.4496 12.9179 21.4527 10.3693C21.4527 8.512 19.9407 7 18.0833 7H10.3693C8.512 7 7 8.512 7 10.3693C7 31.6727 24.3297 49 45.6307 49C47.488 49 49 47.488 49 45.6307V37.9377C49 36.0803 47.488 34.5683 45.6307 34.5683Z"
+                                        fill="#FF7802"></path>
+                                    <path opacity="0.2"
+                                        d="M45.631 34.5683C43.0867 34.573 40.558 34.1704 38.141 33.376C37.0046 32.9863 35.7376 33.2686 34.7506 34.1273L25.5293 43.3486L25.5573 43.3626L34.4123 34.7106C35.4226 33.852 36.7223 33.5673 37.8843 33.9593C40.3343 34.7503 42.9173 35.1493 45.5493 35.1493C47.4533 35.1493 49.0003 36.6636 49.0003 38.521V37.9376C49.0003 36.0803 47.4883 34.5683 45.631 34.5683Z"
+                                        fill="white"></path>
+                                    <path
+                                        d="M30.6666 38.2108C25.1975 35.2814 20.7225 30.7925 17.8099 25.3145L12.6836 30.4385C15.896 35.6909 20.3106 40.1047 25.5636 43.3161L30.6666 38.2108Z"
+                                        fill="url(#paint0_linear_52_852)"></path>
+                                    <path opacity="0.2"
+                                        d="M21.4527 10.3693C21.4527 8.512 19.9407 7 18.0833 7H10.3693C8.512 7 7 8.512 7 10.3693C7 10.5163 7.014 10.661 7.014 10.8057C7.05123 9.94001 7.42074 9.12202 8.04568 8.52185C8.67062 7.92168 9.50288 7.58554 10.3693 7.58333H18.0833C19.9407 7.58333 21.4527 9.09533 21.4527 10.9527"
+                                        fill="white"></path>
+                                    <path opacity="0.1"
+                                        d="M45.7936 48.4166C37.5638 48.4253 29.5416 45.8338 22.8723 41.012C16.203 36.1903 11.2276 29.3847 8.65625 21.5669C9.15558 23.2236 9.76225 24.7822 10.4716 26.3386C16.5593 39.6922 30.0226 48.9999 45.6303 48.9999C47.2216 48.9999 48.5516 47.8869 48.9016 46.4006C48.6335 47.0008 48.1973 47.5106 47.6458 47.8683C47.0943 48.2261 46.451 48.4165 45.7936 48.4166Z"
+                                        fill="#010101"></path>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_52_852" x1="15.5443" y1="28.9405" x2="25.7386"
+                                            y2="39.1348" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#010101" stop-opacity="0.1"></stop>
+                                            <stop offset="1" stop-color="#010101" stop-opacity="0"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="text-center">
+                                <p class="font-semibold text-lg mb-1">رقم الهاتف</p>
+                                <p class="text-gray-500 mb-2">دعنا نتحدث سويًا</p>
+                                <p class="font-medium text-blue-600">0599141212</p>
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="text-lg font-bold text-blue-900">الرسالة</h3>
-                            <p class="text-gray-600 mt-1">
-                                جمعية أهلية تنموية ثقافية اجتماعية، تسعى لتمكين وتطوير المرأة والطفل والشباب كي يلعبوا
-                                دورا رائدا في
-                                بناء مجتمع مدني واع.
-                            </p>
+
+                        <!-- بطاقة العنوان -->
+                        <div class="bg-[#F8F9FA] shadow-md rounded-xl p-6 hover:shadow-lg transition">
+                            <div
+                                class="w-20 h-20 flex items-center justify-center rounded-full bg-[#dee2e680] mx-auto mb-4">
+                                <!-- الأيقونة -->
+                                <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M30.2938 47.9467L19.3071 35.5733C12.5338 27.9467 13.9738 16.1067 22.3471 10.3467C28.1605 6.34668 35.8405 6.34668 41.6538 10.3467C50.0271 16.16 51.4671 27.9467 44.6938 35.5733L33.7071 47.9467C32.8005 49.0133 31.2005 49.0133 30.2938 47.9467Z"
+                                        fill="#1495D9"></path>
+                                    <path
+                                        d="M32.0007 33.4933C37.1259 33.4933 41.2807 29.3386 41.2807 24.2134C41.2807 19.0881 37.1259 14.9333 32.0007 14.9333C26.8755 14.9333 22.7207 19.0881 22.7207 24.2134C22.7207 29.3386 26.8755 33.4933 32.0007 33.4933Z"
+                                        fill="white"></path>
+                                    <path
+                                        d="M31.9996 56.6934C38.1263 56.6934 43.0929 55.4756 43.0929 53.9734C43.0929 52.4712 38.1263 51.2534 31.9996 51.2534C25.8729 51.2534 20.9062 52.4712 20.9062 53.9734C20.9062 55.4756 25.8729 56.6934 31.9996 56.6934Z"
+                                        fill="#FF7802"></path>
+                                </svg>
+                            </div>
+                            <div class="text-center">
+                                <p class="font-semibold text-lg mb-1">العنوان</p>
+                                <p class="text-gray-500 mb-2">نتشرف بزيارتكم بمقرنا</p>
+                                <p class="font-medium">فلسطين - غزة - خانيونيس</p>
+                            </div>
                         </div>
                     </div>
                 </div>

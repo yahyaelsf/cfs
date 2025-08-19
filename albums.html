@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>المؤسسة المستقبل الخيرية</title>
+        <title>جمعية المستقبل الخيرية</title>
 
         <!-- TailwindCSS -->
         <script src="https://cdn.tailwindcss.com"></script>
@@ -16,6 +16,7 @@
         <link href="css/animate.min.css" rel="stylesheet">
         <link href="css/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
     </head>
 
     <body class="font-sans text-gray-800">
@@ -65,16 +66,16 @@
                             class="hover:text-red-500 hover:bg-red-50 p-2  rounded-full transition">الرئيسية</a></li>
 
                     <!-- من نحن -->
-                    <li class="relative dropdown bg-red-50 py-1 rounded-full">
+                    <li class="relative dropdown group hover:bg-red-50 py-1 rounded-full">
 
-                        <button class="flex items-center gap-1 text-red-500 hover:text-red-500 focus:outline-none ">
+                        <button class="flex items-center gap-1 group-hover:text-red-500 focus:outline-none ">
                             من نحن
                             <svg class="w-4 h-4 rtl:ml-1 mt-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
-                        <ul class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white border rounded shadow-md text-base"
+                        <ul class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-white border rounded shadow-md text-base group-hover:block"
                             role="menu">
                             <li><a href="about.html" class="block px-4 py-2 hover:bg-gray-100">
                                     عن الجمعية</a></li>
@@ -99,8 +100,8 @@
                         <ul class="dropdown-menu hidden absolute left-0 mt-2 w-60 bg-white border rounded shadow-md text-base group-hover:block"
                             role="menu">
                             <li><a href="program-learn.html" class="block px-4 py-2 hover:bg-gray-100"> البرنامج
-                                    التعليمي – التثقيفي </a>
-                            </li>
+                                    التعليمي –
+                                    التثقيفي </a></li>
                             <li><a href="program-soial.html" class="block px-4 py-2 hover:bg-gray-100"> البرنامج الإغاثي
                                     الاجتماعي والامن الغذائي
                                     وسبل العيش</a></li>
@@ -124,7 +125,7 @@
                     <!-- التقارير -->
                     <li class="relative dropdown group hover:bg-red-50 py-1 rounded-full">
                         <button
-                            class="dropdown-toggle flex items-center gap-1 group-hover:text-red-500 hover:text-red-500 focus:outline-none">
+                            class="dropdown-toggle flex items-center gap-1 group-hover:text-red-500 focus:outline-none">
                             التقارير
                             <svg class="w-4 h-4 rtl:ml-1 mt-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -137,17 +138,15 @@
                                     السنوية</a>
                             </li>
                             <li><a href="financial-reports.html" class="block px-4 py-2 hover:bg-gray-100">تقارير
-                                    المالية السنوية
-                                </a></li>
+                                    المالية السنوية </a></li>
                             <li><a href="policies.html" class="block px-4 py-2 hover:bg-gray-100">الأدلة والسياسات</a>
                             </li>
                         </ul>
                     </li>
 
-                    <!-- المركز الإعلامي -->
-                    <li class="relative dropdown group hover:bg-red-50 py-1 rounded-full">
-                        <button
-                            class="dropdown-toggle flex items-center gap-1 group-hover:text-red-500 hover:text-red-500 focus:outline-none">
+                    <!-- المركز الإعلامي  -->
+                    <li class="relative dropdown group bg-red-50 py-1 rounded-full">
+                        <button class="dropdown-toggle flex items-center gap-1 text-red-500 focus:outline-none">
                             المركز الإعلامي
                             <svg class="w-4 h-4 rtl:ml-1 mt-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -273,8 +272,7 @@
                             </svg>
                         </button>
                         <ul class="mobile-dropdown-menu hidden pl-4 space-y-1">
-                            <li><a href="program-learn.html" class="block py-1 px-3"> البرنامج التعليمي – التثقيفي </a>
-                            </li>
+                            <li><a href="#education" class="block py-1 px-3"> البرنامج التعليمي – التثقيفي </a></li>
                             <li><a href="program-soial.html" class="block py-1 px-3"> البرنامج الإغاثي الاجتماعي والامن
                                     الغذائي
                                     وسبل
@@ -361,12 +359,14 @@
             </div>
         </nav>
 
+
+
         <section class="bg-blue-50 py-8">
             <div class="max-w-6xl mx-auto px-4 relative">
 
 
                 <!-- Title -->
-                <h1 class="text-3xl font-bold text-blue-900 mt-14 text-right">من نحن</h1>
+                <h1 class="text-3xl font-bold text-blue-900 mt-14 text-right"> المركز الإعلامي</h1>
 
                 <!-- Breadcrumb -->
                 <div class="flex justify-start items-center mt-2 space-x-2 rtl:space-x-reverse text-gray-500 text-sm">
@@ -379,128 +379,113 @@
                         الرئيسية
                     </a>
                     <span>/</span>
-                    <span>من نحن</span>
+                    <span> المركز الإعلامي</span>
                     <span>/</span>
-                    <a href="#" class="text-red-600 hover:underline">عن الجمعية</a>
+                    <a href="#" class="text-red-600 hover:underline"> معرض الصور والفيديوهات</a>
                 </div>
             </div>
         </section>
 
+        <section class="max-w-7xl mx-auto px-4 py-10">
+            <!-- Tabs header -->
+            <div class="flex justify-center">
+                <div id="tabs" class="flex gap-2 border rounded-xl p-2 bg-white shadow-sm">
+                    <button type="button" role="tab" aria-selected="true" data-tab="photos"
+                        class="tab-btn flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-600 text-white transition">
+                        <!-- icon -->
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15 22.75H9C3.57 22.75 1.25 20.43 1.25 15V9C1.25 3.57 3.57 1.25 9 1.25H15C20.43 1.25 22.75 3.57 22.75 9V15C22.75 20.43 20.43 22.75 15 22.75ZM9 2.75C4.39 2.75 2.75 4.39 2.75 9V15C2.75 19.61 4.39 21.25 9 21.25H15C19.61 21.25 21.25 19.61 21.25 15V9C21.25 4.39 19.61 2.75 15 2.75H9Z"
+                                fill="currentColor"></path>
+                            <path
+                                d="M9 10.75C7.48 10.75 6.25 9.52 6.25 8C6.25 6.48 7.48 5.25 9 5.25C10.52 5.25 11.75 6.48 11.75 8C11.75 9.52 10.52 10.75 9 10.75ZM9 6.75C8.31 6.75 7.75 7.31 7.75 8C7.75 8.69 8.31 9.25 9 9.25C9.69 9.25 10.25 8.69 10.25 8C10.25 7.31 9.69 6.75 9 6.75Z"
+                                fill="currentColor"></path>
+                            <path
+                                d="M2.67075 19.7001C2.43075 19.7001 2.19075 19.5801 2.05075 19.3701C1.82075 19.0301 1.91075 18.5601 2.26075 18.3301L7.19075 15.0201C8.27075 14.2901 9.76075 14.3801 10.7407 15.2101L11.0707 15.5001C11.5707 15.9301 12.4207 15.9301 12.9107 15.5001L17.0707 11.9301C18.1307 11.0201 19.8007 11.0201 20.8707 11.9301L22.5007 13.3301C22.8107 13.6001 22.8507 14.0701 22.5807 14.3901C22.3107 14.7001 21.8407 14.7401 21.5207 14.4701L19.8907 13.0701C19.3907 12.6401 18.5407 12.6401 18.0407 13.0701L13.8807 16.6401C12.8207 17.5501 11.1507 17.5501 10.0807 16.6401L9.75075 16.3501C9.29075 15.9601 8.53075 15.9201 8.02075 16.2701L3.09075 19.5801C2.96075 19.6601 2.81075 19.7001 2.67075 19.7001Z"
+                                fill="currentColor"></path>
+                        </svg>
+                        <span>معرض الصور</span>
+                    </button>
 
-        <!-- About -->
-        <section id="about" class="py-16 bg-white" dir="rtl">
-            <div class="max-w-screen-xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
-
-                <!-- النص مع الرؤية والرسالة -->
-                <div class="text-right space-y-6" data-aos="fade-left" data-aos-delay="100">
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-4"> جمعية المستقبل الخيرية</h2>
-                    <p class="text-base md:text-lg text-gray-600" id="message">
-                        هي مؤسسة غير حكومية أنشئت عام 2006 مرخصة من قبل وزارة الداخلية الفلسطينية تحت رقم (7696) ومسجلة
-                        لدى وزارة الشؤون الاجتماعية
-                        برقم (9070)، تعمل على تفعيل دور النساء والشباب والأطفال وكبار السن وذوي الاحتياجات ودمجهم في
-                        مجتمعاتهم في اطار مجتمع
-                        ديمقراطي يتبنى العدالة الاجتماعية وتكافؤ الفرص من خلال برامج تنموية في كافة المجالات التنموية
-                        والاجتماعية والتعليمية،
-                        وتأهيلهم ليكونوا قوة فاعلة ومستدامة في المجتمع الفلسطيني وذلك من خلال التوجهات الاستراتيجية التي
-                        تعمل عليها الجمعية
-                        وتشمل، المشاركة المجتمعية وحرية التعبير عن الرأي والتمكين الاقتصادي للشباب، تنمية وتطوير قدرات
-                        شرائح المجتمع المختلفة
-                        للمساهمة في تحقيق التنمية البشرية والمجتمعية، تعزيز مبادئ الديمقراطية وحقوق الانسان والنزاهة،
-                        التدريب وبناء القدرات،
-                        تمكين النساء المهمشات اقتصادياً واجتماعياً وحقوقياً، استثمار الخبرات والقدرات لكبار السن من خلال
-                        تعزيز مشاركتهم
-                        المجتمعية، تخفيف حدة الفقر للعائلات الفقيرة والتشبيك والمناصر مع الأطراف ذوي العلاقة.
-                    </p>
+                    <button type="button" role="tab" aria-selected="false" data-tab="videos"
+                        class="tab-btn flex items-center gap-2 px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100 transition">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.88 20.8599H6.81C3.26 20.8599 2 18.3699 2 16.0499V7.94989C2 4.48989 3.35 3.13989 6.81 3.13989H12.88C16.34 3.13989 17.69 4.48989 17.69 7.94989V16.0499C17.69 19.5099 16.34 20.8599 12.88 20.8599ZM6.81 4.65989C4.2 4.65989 3.52 5.33989 3.52 7.94989V16.0499C3.52 17.2799 3.95 19.3399 6.81 19.3399H12.88C15.49 19.3399 16.17 18.6599 16.17 16.0499V7.94989C16.17 5.33989 15.49 4.65989 12.88 4.65989H6.81V4.65989Z"
+                                fill="currentColor"></path>
+                            <path
+                                d="M20.7797 18.11C20.3497 18.11 19.7997 17.97 19.1697 17.53L16.4997 15.66C16.2997 15.52 16.1797 15.29 16.1797 15.04V8.95999C16.1797 8.70999 16.2997 8.47999 16.4997 8.33999L19.1697 6.46999C20.3597 5.63999 21.2297 5.87999 21.6397 6.08999C22.0497 6.30999 22.7497 6.87999 22.7497 8.32999V15.66C22.7497 17.11 22.0497 17.69 21.6397 17.9C21.4497 18.01 21.1497 18.11 20.7797 18.11ZM17.6897 14.64L20.0397 16.28C20.4897 16.59 20.8097 16.62 20.9397 16.55C21.0797 16.48 21.2297 16.2 21.2297 15.66V8.33999C21.2297 7.78999 21.0697 7.51999 20.9397 7.44999C20.8097 7.37999 20.4897 7.40999 20.0397 7.71999L17.6897 9.35999V14.64Z"
+                                fill="currentColor"></path>
+                            <path
+                                d="M11.5 11.75C10.26 11.75 9.25 10.74 9.25 9.5C9.25 8.26 10.26 7.25 11.5 7.25C12.74 7.25 13.75 8.26 13.75 9.5C13.75 10.74 12.74 11.75 11.5 11.75ZM11.5 8.75C11.09 8.75 10.75 9.09 10.75 9.5C10.75 9.91 11.09 10.25 11.5 10.25C11.91 10.25 12.25 9.91 12.25 9.5C12.25 9.09 11.91 8.75 11.5 8.75Z"
+                                fill="currentColor"></path>
+                        </svg>
+                        <span>مقاطع الفيديو</span>
+                    </button>
                 </div>
-
-                <!-- الصورة -->
-
-                <div class="flex justify-center md:justify-start relative" data-aos="fade-right" data-aos-delay="100">
-                    <!-- Dots background image -->
-                    <img src="images/dots.jpg" alt=""
-                        class="absolute top-0 left-0 w-40 h-40 -translate-x-6 -translate-y-6 opacity-50 pointer-events-none z-0">
-
-                    <!-- Main image container -->
-                    <div
-                        class="p-1 rounded-lg border-4 border-blue-900 shadow-lg max-w-full relative z-10 bg-white transform hover:scale-105 transition duration-500 ease-in-out">
-                        <img src="images/about.jpeg" alt="نبذة عن المؤسسة"
-                            class="rounded-md w-full h-auto object-cover">
-                    </div>
-                </div>
-
             </div>
-        </section>
 
-        <!-- Vision & Mission -->
-        <section class="bg-gray-50 py-10" dir="rtl">
-            <div class="max-w-6xl mx-auto px-4">
+            <!-- Panels -->
+            <div class="mt-8">
+                <!-- Photos -->
+                <div id="photos" data-tab-panel>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white rounded-xl shadow hover:shadow-lg overflow-hidden">
+                            <a data-fancybox="gallery-1"
+                                href="https://saed.newlinetech.site/uploads/albums/Xhs82XhHISpvGtoxTWpgkp8xHkP6jy2sg694Foj4.png">
+                                <img class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
+                                    src="https://saed.newlinetech.site/uploads/albums/Xhs82XhHISpvGtoxTWpgkp8xHkP6jy2sg694Foj4.png"
+                                    alt="">
+                            </a>
 
-                <!-- الرؤية والرسالة -->
-                <div class="grid md:grid-cols-2 gap-6 mb-6">
-                    <!-- الرؤية -->
-                    <div class="bg-white rounded-2xl shadow p-6 flex items-start gap-4 border border-gray-200">
-                        <div class="w-12 h-10 flex items-center justify-center rounded-full border border-gray-300">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 35 35">
-                                <g id="vuesax_linear_eye" data-name="vuesax/linear/eye"
-                                    transform="translate(-108 -188)">
-                                    <g id="eye" transform="translate(108 188)">
-                                        <path id="Vector"
-                                            d="M10.288,5.144A5.144,5.144,0,1,1,5.144,0,5.139,5.139,0,0,1,10.288,5.144Z"
-                                            transform="translate(12.356 12.356)" fill="none" stroke="#1e3a8a"
-                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path>
-                                        <path id="Vector-2" data-name="Vector"
-                                            d="M14.317,24.295c5.165,0,9.979-3.053,13.33-8.338a7.84,7.84,0,0,0,0-7.619C24.3,3.053,19.482,0,14.317,0S4.338,3.053.988,8.338a7.84,7.84,0,0,0,0,7.619C4.338,21.241,9.152,24.295,14.317,24.295Z"
-                                            transform="translate(3.183 5.345)" fill="none" stroke="#1e3a8a"
-                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path>
-                                        <path id="Vector-3" data-name="Vector" d="M0,0H35V35H0Z"
-                                            transform="translate(35 35) rotate(180)" fill="none" opacity="0"></path>
-                                    </g>
-                                </g>
-                            </svg>
                         </div>
-                        <div>
-                            <h3 class="text-lg font-bold text-blue-900">الرؤية</h3>
-                            <p class="text-gray-600 mt-1">
-                                مؤسسة رائدة تنهض بالواقع الفلسطيني من أجل تحقيق الاستقرار والتنمية المجتمعية.
-                            </p>
+                        <div class="bg-white rounded-xl shadow hover:shadow-lg overflow-hidden">
+                            <a data-fancybox="gallery-2"
+                                href="https://saed.newlinetech.site/uploads/albums/aEEDmQKqPQw5LK63j7UhBvpwxwwDYEF0ycAGAZhM.webp">
+                            <img class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
+                                src="https://saed.newlinetech.site/uploads/albums/aEEDmQKqPQw5LK63j7UhBvpwxwwDYEF0ycAGAZhM.webp"
+                                alt="">
+                            </a>
+                        </div>
+                        <div class="bg-white rounded-xl shadow hover:shadow-lg overflow-hidden">
+                            <a data-fancybox="gallery-3"
+                                href="https://saed.newlinetech.site/uploads/albums/VQ9LAOpBZCqfvdTRTk9zPwizQPuPu9aXc9S0sO7w.webp">
+                            <img class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
+                                src="https://saed.newlinetech.site/uploads/albums/VQ9LAOpBZCqfvdTRTk9zPwizQPuPu9aXc9S0sO7w.webp"
+                                alt="">
+                            </a>
                         </div>
                     </div>
+                </div>
 
-                    <!-- الرسالة -->
-                    <div class="bg-white rounded-2xl shadow p-6 flex items-start gap-4 border border-gray-200">
-                        <div class="w-12 h-10 flex items-center justify-center rounded-full border border-gray-300">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" viewBox="0 0 35 35">
-                                <g id="vuesax_linear_message-text" data-name="vuesax/linear/message-text"
-                                    transform="translate(-236 -250)">
-                                    <g id="message-text" transform="translate(236 250)">
-                                        <path id="Vector"
-                                            d="M9.484,24.8h-.73C2.918,24.8,0,23.346,0,16.05v-7.3Q0,0,8.755,0H20.428q8.755,0,8.755,8.755v7.3q0,8.755-8.755,8.755H19.7a1.479,1.479,0,0,0-1.167.584l-2.189,2.918a2.073,2.073,0,0,1-3.5,0l-2.189-2.918A1.649,1.649,0,0,0,9.484,24.8Z"
-                                            transform="translate(2.909 2.909)" fill="none" stroke="#1e3a8a"
-                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path>
-                                        <path id="Vector-2" data-name="Vector" d="M0,0H14.543"
-                                            transform="translate(10.228 11.667)" fill="none" stroke="#1e3a8a"
-                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path>
-                                        <path id="Vector-3" data-name="Vector" d="M0,0H8.726"
-                                            transform="translate(10.218 18.958)" fill="none" stroke="#1e3a8a"
-                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path>
-                                        <path id="Vector-4" data-name="Vector" d="M0,0H35V35H0Z" fill="none"
-                                            opacity="0"></path>
-                                    </g>
-                                </g>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold text-blue-900">الرسالة</h3>
-                            <p class="text-gray-600 mt-1">
-                                جمعية أهلية تنموية ثقافية اجتماعية، تسعى لتمكين وتطوير المرأة والطفل والشباب كي يلعبوا
-                                دورا رائدا في
-                                بناء مجتمع مدني واع.
-                            </p>
+                <!-- Videos -->
+                <div id="videos" data-tab-panel class="hidden">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="relative bg-white rounded-xl shadow hover:shadow-lg overflow-hidden">
+                            <a data-fancybox="vedio-1"
+                                href="https://saed.newlinetech.site/uploads/video/yxHJsKqaO7kI3u07v14zE0fd88jnir4HDcgu0O4Y.jpg">
+                            <img class="w-full h-56 object-cover"
+                                src="https://saed.newlinetech.site/uploads/video/yxHJsKqaO7kI3u07v14zE0fd88jnir4HDcgu0O4Y.jpg"
+                                alt="">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="bg-white/80 rounded-full p-4 shadow-lg">
+                                    <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            </a>
+                            <p class="p-3 text-center font-medium">عنوان الفيديو تست</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+
+
+
+
 
 
         <!-- Partners -->
@@ -620,7 +605,7 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
         <script src="js/aos.js"></script>
         <script src="js/script.js"></script>
-
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
         <script>
             function animateCounter(counter) {
                 const target = +counter.getAttribute('data-target');
@@ -674,7 +659,30 @@
                 })
             });
         </script>
+        <script>
+            // Pure JS tabs
+            document.addEventListener('DOMContentLoaded', () => {
+                const activeClasses = ['bg-blue-600', 'text-white'];
+                const inactiveClasses = ['text-gray-700', 'hover:bg-gray-100'];
+                const btns = document.querySelectorAll('#tabs .tab-btn');
+                const panels = document.querySelectorAll('[data-tab-panel]');
 
+                function activate(targetId) {
+                    panels.forEach(p => p.classList.toggle('hidden', p.id !== targetId));
+                    btns.forEach(b => {
+                        const isActive = b.dataset.tab === targetId;
+                        b.setAttribute('aria-selected', isActive);
+                        b.classList.remove(...activeClasses, ...inactiveClasses);
+                        b.classList.add('flex', 'items-center', 'gap-2', 'px-4', 'py-2', 'rounded-lg', 'transition');
+                        b.classList.add(...(isActive ? activeClasses : inactiveClasses));
+                    });
+                }
+
+                btns.forEach(b => b.addEventListener('click', () => activate(b.dataset.tab)));
+                // default
+                activate('photos');
+            });
+        </script>
     </body>
 
 </html>

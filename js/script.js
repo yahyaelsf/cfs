@@ -108,3 +108,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Optional: keep it painted after hover, no action needed on mouse leave
     });
+      const btn = document.getElementById("langDropdownBtn");
+  const menu = document.getElementById("langDropdownMenu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!btn.contains(e.target) && !menu.contains(e.target)) {
+      menu.classList.add("hidden");
+    }
+  });
